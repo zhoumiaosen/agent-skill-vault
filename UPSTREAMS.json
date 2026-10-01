@@ -1,0 +1,50 @@
+{
+  "retrieved": "2026-10-01",
+  "skills": [
+    {
+      "name": "frontend-design",
+      "repository": "anthropics/skills",
+      "revision": "8a1541c4a3ffa5a20a5a91de0dcf3f0bab1d1ef4",
+      "path": "skills/frontend-design/SKILL.md",
+      "blob_sha": "a5333457c414d20d625f307df945842c0952ecc3",
+      "license": "Apache-2.0",
+      "modified": false
+    },
+    {
+      "name": "verification-before-completion",
+      "repository": "obra/superpowers",
+      "revision": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+      "path": "skills/verification-before-completion/SKILL.md",
+      "blob_sha": "7d45333cc4a49c57a80df6c1fe2fa777a207afbc",
+      "license": "MIT",
+      "modified": false
+    },
+    {
+      "name": "receiving-code-review",
+      "repository": "obra/superpowers",
+      "revision": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+      "path": "skills/receiving-code-review/SKILL.md",
+      "blob_sha": "950da7b74bf6dbed6b8726d12ddadd65a9f5fda7",
+      "license": "MIT",
+      "modified": false
+    },
+    {
+      "name": "create-technical-spike",
+      "repository": "github/awesome-copilot",
+      "revision": "d6131471b85fbb4799e64175ebc42c9309ecc28a",
+      "path": "skills/create-technical-spike/SKILL.md",
+      "blob_sha": "bac8a01d6251010f639fbab6a15038a43afca047",
+      "license": "MIT",
+      "modified": false
+    },
+    {
+      "name": "documentation-writer",
+      "repository": "github/awesome-copilot",
+      "revision": "d6131471b85fbb4799e64175ebc42c9309ecc28a",
+      "path": "skills/documentation-writer/SKILL.md",
+      "blob_sha": "93e3fbf57fe64179570de382347db8258c661b56",
+      "license": "MIT",
+      "modified": false
+    }
+  ]
+}
