@@ -111,6 +111,96 @@
       },
       "license": "MIT",
       "modified": false
+    },
+    {
+      "name": "unity-debug",
+      "repository": "tipoLi5890/unity-dev-skills",
+      "revision": "97ba3ca019d80a327c5840271ea3cc83b2196f1b",
+      "path": "skills/unity-debug/SKILL.md",
+      "license": "MIT",
+      "modified": false,
+      "files": {
+        "SKILL.md": "654e9417f79dfb4b85514378de89e6445012af17",
+        "reference/cli-harness.md": "2a7e9c72050c63942fc4605c3960b54a6d7d1392",
+        "reference/editor-control.md": "18ff03f5efaf064ebc4cce6896b5f9aeee8aa31c",
+        "reference/harness-trust.md": "9ca9aa1086136ad44ffc4f2da4eb107c0f4af477",
+        "reference/log-triage.md": "cefefd35639680bb7d166adc2b4861fe7d6c83ed",
+        "reference/motion-and-timing.md": "d5bbaa41ce095c2e4037f3dec23582bc78b4442a",
+        "reference/test-verdicts.md": "4285a11b829f8ac254ba93177b511c3f7bbbefdd",
+        "reference/unity-gotchas.md": "7b032d018002f139b9c35b82a327311a314f9ac2",
+        "reference/visual-checks.md": "3d089228ac958ac1ab62d34307265b28d2a21abc",
+        "resources/DevDebug.cs": "3d8b7e95a124a2e3eed0b4469c87d485cb062ca5"
+      }
+    },
+    {
+      "name": "unity-profiling",
+      "repository": "tipoLi5890/unity-dev-skills",
+      "revision": "97ba3ca019d80a327c5840271ea3cc83b2196f1b",
+      "path": "skills/unity-profiling/SKILL.md",
+      "license": "MIT",
+      "modified": false,
+      "files": {
+        "SKILL.md": "650f91c43a39bda15a52a2d6fa3f38e317d598b7",
+        "reference/compare.md": "0261d87842450ae68e1f5d9c44267d1e60c185ac",
+        "reference/counters.md": "50398f6e9e085efa130c91452de21f4a9f49856d",
+        "reference/frame-windows.md": "f136bd457c4b9d2860aab29f98d2c9637600d8b9",
+        "reference/raw-capture.md": "fb00fa8979c5382914ce6f02bcfe8e29c1dcf7b5",
+        "reference/where-the-time-goes.md": "ce80105b1fbf4538df84e5e5dbad5922afa94c98",
+        "reference/work-counters.md": "9dcb2c19ee533e6691934ca921cd6b7c351d2867",
+        "resources/CounterCatalog.cs": "ec62b86b7215e6c1bdb0284fa5ceae2021cf64de",
+        "resources/FrameSampler.cs": "dc5085e49c8b75ba412f519597fefe594700b034",
+        "resources/ProfilerRawCapture.cs": "8fb7338640555188abebd3a9a2c0da32372b2358",
+        "resources/WorkCounters.cs": "28b14e82d100f2f66168962191fee60023f231d0",
+        "scripts/compare_windows.py": "e5d55a3e7b85b8f53999b1542f1514867ac3160e"
+      }
+    },
+    {
+      "name": "unity-tilemap",
+      "repository": "tipoLi5890/unity-dev-skills",
+      "revision": "97ba3ca019d80a327c5840271ea3cc83b2196f1b",
+      "path": "skills/unity-tilemap/SKILL.md",
+      "license": "MIT",
+      "modified": false,
+      "files": {
+        "SKILL.md": "d190b9bb5367bb02a712406222ef685d64fd41d3",
+        "reference/hexagonal-rule-set.md": "5429f0d554f51613d7edd93563d182fc5824202a",
+        "reference/palette-and-grid.md": "2b73dfdd9cde4b19afac3f890a482726d13b8c96",
+        "reference/rule-tile-patterns.md": "5c2304293892465aa15e187b801d5d802a2a5641",
+        "reference/sprite-3x3-analysis.md": "c1716c7c17d937a0f0aa79c7f55dc36f35e96134",
+        "resources/CreatePaletteTemplate.cs": "a11dfe0a4c606302d77a161353540a59a843bb2f",
+        "resources/RuleTileFromSprites.cs": "9b29b4bdfefdb1f94887e3e567520e9fdf01644b",
+        "resources/RuleTileGeneratorWindow.cs": "b9cf0139f58d1538bb523b5b8efc6fcddd1a8b68",
+        "resources/SpriteGridAnalysis.cs": "4c5c31decda8ec4f53cad14285fe57d125219f51"
+      }
+    },
+    {
+      "name": "unity-2d-pixel-perfect",
+      "repository": "tipoLi5890/unity-dev-skills",
+      "revision": "97ba3ca019d80a327c5840271ea3cc83b2196f1b",
+      "path": "skills/unity-2d-pixel-perfect/SKILL.md",
+      "license": "MIT",
+      "modified": false,
+      "files": {
+        "SKILL.md": "d74c4fd24925124fa624c048cb020437dadf4bd1",
+        "reference/api-and-enums.md": "a82c52de77730f28f086aba97e97a987de4dfa95",
+        "reference/motion-and-upscale.md": "3e2a726636a1d209206ac7b7c918e925e72e53d4",
+        "reference/pipeline-and-migration.md": "8e07236b325d54da4905fec2021c347c8815beb7",
+        "resources/CameraSetupBuiltIn.cs": "25fe5c0436b7bbc2fd501c230e6408908053fbd6",
+        "resources/CameraSetupURP.cs": "3e564becbfd1018bac864df363e7daab49f0e883",
+        "resources/PipelineDetection.cs": "e035a11ab97639270fd840053086ef8b0d0cba90",
+        "resources/SpriteImportFix.cs": "0bacfa3e762590e936d92751d6e0b1b6d2485a3b"
+      }
+    },
+    {
+      "name": "game-design",
+      "repository": "vudovn/ag-kit",
+      "revision": "549ba3dc2eb1d40fccb5b6d792eba4101c80cd69",
+      "path": ".agents/skills/game-development/game-design/SKILL.md",
+      "license": "MIT",
+      "modified": false,
+      "files": {
+        "SKILL.md": "4dea97a8c9759cb81a7541c504a2dbba9c4a3e64"
+      }
     }
   ]
 }

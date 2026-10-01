@@ -12,3 +12,10 @@ This collection preserves upstream skill text and license notices. Sources are p
 - create-implementation-plan, create-architectural-decision-record and context-map: github/awesome-copilot, Copyright GitHub, Inc., MIT.
 
 Full license notices accompany every skill. Upstream instruction files are preserved unchanged.
+
+## Game-development collection
+
+- unity-debug, unity-profiling, unity-tilemap and unity-2d-pixel-perfect: tipoLi5890/unity-dev-skills; Copyright (c) 2026 Li, ching yu; MIT.
+- game-design: vudovn/ag-kit; Copyright (c) 2026 VUDOVN; MIT.
+
+Complete license notices accompany each package. All copied source files remain unchanged, with exact source revisions and file hashes in UPSTREAMS.json. No endorsement is implied.

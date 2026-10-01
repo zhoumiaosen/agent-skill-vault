@@ -2,7 +2,7 @@
 
 A storehouse for reusable AI-agent skills: focused instructions, useful references, and optional supporting scripts that make repeatable work easier to share and maintain.
 
-This repository includes ten public, licensed upstream skills. No installer or runtime integrations are included.
+This repository includes fifteen public, licensed upstream skills. No installer or runtime integrations are included.
 
 ## Skill catalog
 
@@ -18,9 +18,19 @@ This repository includes ten public, licensed upstream skills. No installer or r
 - [create-architectural-decision-record](skills/create-architectural-decision-record/SKILL.md) — Record architecture decisions, alternatives and consequences. Replace Copilot-style input placeholders; adapt /docs/adr/ to your workspace. Requests missing context. License: MIT. [Source and compatibility](skills/create-architectural-decision-record/SOURCE.md)
 - [context-map](skills/context-map/SKILL.md) — Map affected files, dependencies, tests and risks. Replace {{task_description}}; requires repository search/read and waits for map review before implementation. License: MIT. [Source and compatibility](skills/context-map/SOURCE.md)
 
+### Game development
+
+- [unity-debug](skills/unity-debug/SKILL.md) — Unity 6 debugging using Editor logs and Test Framework. Optional live-Editor commands need Unity CLI and com.unity.pipeline; neither is installed by this repository. [Source and compatibility](skills/unity-debug/SOURCE.md)
+- [unity-profiling](skills/unity-profiling/SKILL.md) — Unity 6 performance analysis with bundled C# profiling templates and a Python 3 standard-library comparison script. Produces local diagnostic captures; validate APIs and performance claims on your project. [Source and compatibility](skills/unity-profiling/SOURCE.md)
+- [unity-tilemap](skills/unity-tilemap/SKILL.md) — Unity 6 tilemap and RuleTile workflows for 2D levels. RuleTile templates require com.unity.2d.tilemap.extras. Editor utilities modify project assets; inspect paths and back up work first. [Source and compatibility](skills/unity-tilemap/SOURCE.md)
+- [unity-2d-pixel-perfect](skills/unity-2d-pixel-perfect/SKILL.md) — Unity 6 pixel-art camera and sprite-import workflows. Choose the URP or built-in pipeline template for your project; do not copy both camera setups blindly. [Source and compatibility](skills/unity-2d-pixel-perfect/SOURCE.md)
+- [game-design](skills/game-design/SKILL.md) — Engine-neutral guidance for mechanics, balance, progression and player experience. Markdown only; no engine integration required. [Source and compatibility](skills/game-design/SOURCE.md)
+
+These are third-party instructions, not permission to act. Review cleanup and package commands before use: upstream examples may delete generated outputs or Temp files, restore package files, stop an Editor, or modify assets. Preserve unsaved work and local changes; adapt paths and obtain any required approval. Optional pointers to other upstream skills are not bundled. Templates have not been compiled in Unity or runtime-tested here.
+
 ### Verification and licensing
 
-The skill text is copied unchanged from pinned public upstream revisions. License copies and provenance accompany each skill. See [UPSTREAMS.json](UPSTREAMS.json) and [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). These are instruction-only skills; no scripts have been added. Content and links were reviewed, but cross-agent runtime behavior has not been tested. Each upstream license applies to its corresponding files; no blanket relicense is implied.
+The skill text is copied unchanged from pinned public upstream revisions. License copies and provenance accompany each skill. See [UPSTREAMS.json](UPSTREAMS.json) and [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). The original ten skills are instruction-only. The game-development collection also includes upstream C# templates and a Python comparison script; adding them here does not install or execute them. Content and links were reviewed, but cross-agent runtime behavior has not been tested. Each upstream license applies to its corresponding files; no blanket relicense is implied.
 
 ## Suggested layout
 
