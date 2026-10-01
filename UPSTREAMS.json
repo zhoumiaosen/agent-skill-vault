@@ -45,6 +45,72 @@
       "blob_sha": "93e3fbf57fe64179570de382347db8258c661b56",
       "license": "MIT",
       "modified": false
+    },
+    {
+      "name": "test-driven-development",
+      "repository": "obra/superpowers",
+      "revision": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+      "path": "skills/test-driven-development/SKILL.md",
+      "blob_sha": "46838cc9e893c06259e3bdad0fc2425b36242f15",
+      "files": {
+        "SKILL.md": "46838cc9e893c06259e3bdad0fc2425b36242f15",
+        "writing-good-tests.md": "d3c4482fd30b4f9084bb61545fe73939a7502c28",
+        "LICENSE.txt": "abf0390320aa14406af7a520b9b0739fdda9bf08"
+      },
+      "license": "MIT",
+      "modified": false
+    },
+    {
+      "name": "dispatching-parallel-agents",
+      "repository": "obra/superpowers",
+      "revision": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+      "path": "skills/dispatching-parallel-agents/SKILL.md",
+      "blob_sha": "3fa091b348bbe0a18eaa0e17e9092c97f7005cbe",
+      "files": {
+        "SKILL.md": "3fa091b348bbe0a18eaa0e17e9092c97f7005cbe",
+        "LICENSE.txt": "abf0390320aa14406af7a520b9b0739fdda9bf08"
+      },
+      "license": "MIT",
+      "modified": false
+    },
+    {
+      "name": "create-implementation-plan",
+      "repository": "github/awesome-copilot",
+      "revision": "d6131471b85fbb4799e64175ebc42c9309ecc28a",
+      "path": "skills/create-implementation-plan/SKILL.md",
+      "blob_sha": "4540a479c34d298d5f7e78f24d0806652411fcf8",
+      "files": {
+        "SKILL.md": "4540a479c34d298d5f7e78f24d0806652411fcf8",
+        "LICENSE.txt": "89bc5e962c9944cdb050887062afdaaf89be504a"
+      },
+      "license": "MIT",
+      "modified": false
+    },
+    {
+      "name": "create-architectural-decision-record",
+      "repository": "github/awesome-copilot",
+      "revision": "d6131471b85fbb4799e64175ebc42c9309ecc28a",
+      "path": "skills/create-architectural-decision-record/SKILL.md",
+      "blob_sha": "be10104faded844c01d0f5b1f82e8c9fca15ba20",
+      "files": {
+        "SKILL.md": "be10104faded844c01d0f5b1f82e8c9fca15ba20",
+        "LICENSE.txt": "89bc5e962c9944cdb050887062afdaaf89be504a"
+      },
+      "license": "MIT",
+      "modified": false
+    },
+    {
+      "name": "context-map",
+      "repository": "github/awesome-copilot",
+      "revision": "d6131471b85fbb4799e64175ebc42c9309ecc28a",
+      "path": "skills/context-map/SKILL.md",
+      "blob_sha": "bb63c552fe88318aee040b833b3f8261c5065d57",
+      "files": {
+        "SKILL.md": "bb63c552fe88318aee040b833b3f8261c5065d57",
+        "LICENSE.txt": "89bc5e962c9944cdb050887062afdaaf89be504a"
+      },
+      "license": "MIT",
+      "modified": false
     }
   ]
 }

@@ -2,7 +2,7 @@
 
 A storehouse for reusable AI-agent skills: focused instructions, useful references, and optional supporting scripts that make repeatable work easier to share and maintain.
 
-This repository includes five public, licensed upstream skills. No installer or runtime integrations are included.
+This repository includes ten public, licensed upstream skills. No installer or runtime integrations are included.
 
 ## Skill catalog
 
@@ -11,6 +11,12 @@ This repository includes five public, licensed upstream skills. No installer or 
 - [receiving-code-review](skills/receiving-code-review/SKILL.md) — Evaluate review feedback before changing code. Requires repository context and test tools. GitHub reply examples assume gh CLI and appropriate authorization; these are not bundled. License: MIT. [Source and compatibility](skills/receiving-code-review/SOURCE.md)
 - [create-technical-spike](skills/create-technical-spike/SKILL.md) — Time-boxed technical research documents. Uses Copilot-style ${input:...} placeholders and tool names; substitute actual values and map tools for other agents. Research and code execution access depend on the task. License: MIT. [Source and compatibility](skills/create-technical-spike/SOURCE.md)
 - [documentation-writer](skills/documentation-writer/SKILL.md) — Diataxis tutorials, how-to guides, reference and explanations. Includes clarification/outline approval steps and restricts external browsing unless requested. No document conversion or PDF tools bundled. License: MIT. [Source and compatibility](skills/documentation-writer/SOURCE.md)
+
+- [test-driven-development](skills/test-driven-development/SKILL.md) — Red/green/refactor and behavioral tests. Uses your existing test runner; npm examples are illustrative. Includes writing-good-tests.md. Its mention of superpowers:writing-skills applies only to testing agent-instruction documents; that separate skill is not bundled. License: MIT. [Source and compatibility](skills/test-driven-development/SOURCE.md)
+- [dispatching-parallel-agents](skills/dispatching-parallel-agents/SKILL.md) — Split independent work into focused agents and verify integration. Requires a harness with subagent support; map dispatch examples to its tools. License: MIT. [Source and compatibility](skills/dispatching-parallel-agents/SOURCE.md)
+- [create-implementation-plan](skills/create-implementation-plan/SKILL.md) — Phased implementation plans with dependencies, risks and tests. Replace Copilot-style input placeholders and adapt /plan/ to the intended workspace. POSIX command examples allow platform equivalents. License: MIT. [Source and compatibility](skills/create-implementation-plan/SOURCE.md)
+- [create-architectural-decision-record](skills/create-architectural-decision-record/SKILL.md) — Record architecture decisions, alternatives and consequences. Replace Copilot-style input placeholders; adapt /docs/adr/ to your workspace. Requests missing context. License: MIT. [Source and compatibility](skills/create-architectural-decision-record/SOURCE.md)
+- [context-map](skills/context-map/SKILL.md) — Map affected files, dependencies, tests and risks. Replace {{task_description}}; requires repository search/read and waits for map review before implementation. License: MIT. [Source and compatibility](skills/context-map/SOURCE.md)
 
 ### Verification and licensing
 

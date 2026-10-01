@@ -5,3 +5,10 @@ This collection preserves upstream skill text and license notices. Sources are p
 - frontend-design: Anthropic, anthropics/skills, Apache-2.0; complete license included in its directory.
 - verification-before-completion and receiving-code-review: obra/superpowers, Copyright (c) 2025 Jesse Vincent, MIT; complete licenses included in both directories.
 - create-technical-spike and documentation-writer: github/awesome-copilot, Copyright GitHub, Inc., MIT; complete licenses included in both directories.
+
+## Additional collection
+
+- test-driven-development (including writing-good-tests.md) and dispatching-parallel-agents: obra/superpowers, Copyright (c) 2025 Jesse Vincent, MIT.
+- create-implementation-plan, create-architectural-decision-record and context-map: github/awesome-copilot, Copyright GitHub, Inc., MIT.
+
+Full license notices accompany every skill. Upstream instruction files are preserved unchanged.
