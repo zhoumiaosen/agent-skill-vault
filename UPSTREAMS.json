@@ -258,6 +258,88 @@
         "SKILL.md": "c84646755c3d8f2b96fd955d1d2706e911b45596",
         "references/layout-and-flow.md": "139caf1d76828a303ba85b9446c75fa259610ea8"
       }
+    },
+    {
+      "name": "rpg",
+      "repository": "gamedev-skills/awesome-gamedev-agent-skills",
+      "revision": "d4b0e35550c55ae70bdfcab4ef5a0e94610438a9",
+      "path": "skills/genres/rpg/SKILL.md",
+      "blob_sha": "13dd8ffa8ebb6488b0f2a7a5af0eb8f9a5fa0d39",
+      "license": "Apache-2.0",
+      "modified": false,
+      "retrieved": "2026-10-02",
+      "files": {
+        "SKILL.md": "13dd8ffa8ebb6488b0f2a7a5af0eb8f9a5fa0d39",
+        "references/stats-combat-quests.md": "cc4b849eaad4af3bbb2464ca5530ce1900ae05b4",
+        "LICENSE": "c7fc0c6d59cb8129a0e30fe13f5a6118f3933c44",
+        "NOTICE": "d4204881c3f79f39151a53a6aae476b188a8c51f"
+      }
+    },
+    {
+      "name": "dialogue-systems",
+      "repository": "gamedev-skills/awesome-gamedev-agent-skills",
+      "revision": "d4b0e35550c55ae70bdfcab4ef5a0e94610438a9",
+      "path": "skills/disciplines/dialogue-systems/SKILL.md",
+      "blob_sha": "04066b23c7718cffc30ce51e7ac703a0e42e0118",
+      "license": "Apache-2.0",
+      "modified": false,
+      "retrieved": "2026-10-02",
+      "files": {
+        "SKILL.md": "04066b23c7718cffc30ce51e7ac703a0e42e0118",
+        "references/ink-and-yarn.md": "140777deed59ca58d87f2a31e1adedf2f6483ae1",
+        "references/runner.md": "fe9bdd1cafef05e232859ce83b1dd13a89926461",
+        "LICENSE": "c7fc0c6d59cb8129a0e30fe13f5a6118f3933c44",
+        "NOTICE": "d4204881c3f79f39151a53a6aae476b188a8c51f"
+      }
+    },
+    {
+      "name": "game-ai",
+      "repository": "gamedev-skills/awesome-gamedev-agent-skills",
+      "revision": "d4b0e35550c55ae70bdfcab4ef5a0e94610438a9",
+      "path": "skills/disciplines/game-ai/SKILL.md",
+      "blob_sha": "7a77e9eaffb6ff607c0072528ebda2c629d728e2",
+      "license": "Apache-2.0",
+      "modified": false,
+      "retrieved": "2026-10-02",
+      "files": {
+        "SKILL.md": "7a77e9eaffb6ff607c0072528ebda2c629d728e2",
+        "references/behavior-trees.md": "bb3ddd6ee7c3b5716ef2f1ca0a51911055541925",
+        "references/pathfinding.md": "5b942559d2e13a19dd5ec2da5b2e6bb3c76386bd",
+        "LICENSE": "c7fc0c6d59cb8129a0e30fe13f5a6118f3933c44",
+        "NOTICE": "d4204881c3f79f39151a53a6aae476b188a8c51f"
+      }
+    },
+    {
+      "name": "unity-scriptableobjects",
+      "repository": "gamedev-skills/awesome-gamedev-agent-skills",
+      "revision": "d4b0e35550c55ae70bdfcab4ef5a0e94610438a9",
+      "path": "skills/unity/unity-scriptableobjects/SKILL.md",
+      "blob_sha": "e02987eda12045d7fe2abf42dfc108caf72cd6c0",
+      "license": "Apache-2.0",
+      "modified": false,
+      "retrieved": "2026-10-02",
+      "files": {
+        "SKILL.md": "e02987eda12045d7fe2abf42dfc108caf72cd6c0",
+        "references/event-channels.md": "71f431bad061c10242829a1651276bf2e14b9280",
+        "LICENSE": "c7fc0c6d59cb8129a0e30fe13f5a6118f3933c44",
+        "NOTICE": "d4204881c3f79f39151a53a6aae476b188a8c51f"
+      }
+    },
+    {
+      "name": "audio-design",
+      "repository": "gamedev-skills/awesome-gamedev-agent-skills",
+      "revision": "d4b0e35550c55ae70bdfcab4ef5a0e94610438a9",
+      "path": "skills/disciplines/audio-design/SKILL.md",
+      "blob_sha": "84fc078551fcfb1dc015da18c0d267e4c0e3542e",
+      "license": "Apache-2.0",
+      "modified": false,
+      "retrieved": "2026-10-02",
+      "files": {
+        "SKILL.md": "84fc078551fcfb1dc015da18c0d267e4c0e3542e",
+        "references/adaptive-music.md": "0c4dba7bb235d873bb7e3f7d0e5ff3b4f74d1ef4",
+        "LICENSE": "c7fc0c6d59cb8129a0e30fe13f5a6118f3933c44",
+        "NOTICE": "d4204881c3f79f39151a53a6aae476b188a8c51f"
+      }
     }
   ]
 }

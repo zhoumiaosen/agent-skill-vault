@@ -2,7 +2,7 @@
 
 A storehouse for reusable AI-agent skills: focused instructions, useful references, and optional supporting scripts that make repeatable work easier to share and maintain.
 
-This repository includes nineteen public, licensed upstream skills. No installer or runtime integrations are included.
+This repository includes twenty-four public, licensed upstream skills. No installer or runtime integrations are included.
 
 ## Skill catalog
 
@@ -36,6 +36,16 @@ These are third-party instructions, not permission to act. Review cleanup and pa
 - [game-ui-ux](skills/game-ui-ux/SKILL.md) — HUDs, menus, navigation and accessible layout. Apache-2.0. [Compatibility and known limitations](skills/game-ui-ux/SOURCE.md)
 
 The asset utilities optionally require Python 3.10+ and Pillow >=10,<13. The upstream color-limit checker has a known off-by-one issue; verify color limits independently. Preview output can overwrite the specified file. Save-system and game-feel code are illustrative sketches, not production-ready drop-ins. No runtime tests have been performed.
+
+### RPG systems additions
+
+- [rpg](skills/rpg/SKILL.md) — Stats and leveling, inventory/equipment, combat formulas and quest state models. Engine-neutral pseudocode that composes with the existing save and UI skills. Apache-2.0. [Compatibility and known limitations](skills/rpg/SOURCE.md)
+- [dialogue-systems](skills/dialogue-systems/SKILL.md) — Branching NPC conversations, narrative variables and localization, with Ink/Yarn guidance and a custom-runner reference. Apache-2.0. [Compatibility and known limitations](skills/dialogue-systems/SOURCE.md)
+- [game-ai](skills/game-ai/SKILL.md) — NPC state machines, behavior trees, steering and A* pathfinding. Portable concepts with GDScript/Python examples; adapt to the project engine. Apache-2.0. [Compatibility and known limitations](skills/game-ai/SOURCE.md)
+- [unity-scriptableobjects](skills/unity-scriptableobjects/SKILL.md) — Unity 6.3 LTS data assets, event channels and runtime registries, with C# examples. Keep shared definitions separate from per-character state and saves. Apache-2.0. [Compatibility and known limitations](skills/unity-scriptableobjects/SOURCE.md)
+- [audio-design](skills/audio-design/SKILL.md) — Mixer/bus architecture, dialogue ducking, SFX variation and adaptive exploration/combat music. Adapt Godot-oriented examples to the chosen audio engine. Apache-2.0. [Compatibility and known limitations](skills/audio-design/SOURCE.md)
+
+These five additions contain instruction and reference Markdown only; no installer, runtime integration or audio assets are bundled. Examples are guides to adapt and test, not production-ready drop-ins.
 
 ### Verification and licensing
 

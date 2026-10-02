@@ -23,3 +23,7 @@ Complete license notices accompany each package. All copied source files remain 
 ## Game workflow additions
 
 - game-feel, save-systems, create-game-assets and game-ui-ux: gamedev-skills/awesome-gamedev-agent-skills, Copyright 2026 Abhishek Barali and the awesome-gamedev-agent-skills contributors. Apache-2.0. Each folder contains the complete upstream LICENSE and NOTICE. Source files copied unchanged; see UPSTREAMS.json for pinned revision and hashes.
+
+## RPG systems additions
+
+- rpg, dialogue-systems, game-ai, unity-scriptableobjects and audio-design: gamedev-skills/awesome-gamedev-agent-skills, Copyright 2026 Abhishek Barali and the awesome-gamedev-agent-skills contributors. Apache-2.0. Each folder contains the complete upstream LICENSE and NOTICE. All upstream skill and reference files are copied unchanged from revision d4b0e35550c55ae70bdfcab4ef5a0e94610438a9; see UPSTREAMS.json for source paths and blob hashes. Vault-authored SOURCE.md files document provenance and compatibility separately.
