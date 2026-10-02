@@ -19,3 +19,7 @@ Full license notices accompany every skill. Upstream instruction files are prese
 - game-design: vudovn/ag-kit; Copyright (c) 2026 VUDOVN; MIT.
 
 Complete license notices accompany each package. All copied source files remain unchanged, with exact source revisions and file hashes in UPSTREAMS.json. No endorsement is implied.
+
+## Game workflow additions
+
+- game-feel, save-systems, create-game-assets and game-ui-ux: gamedev-skills/awesome-gamedev-agent-skills, Copyright 2026 Abhishek Barali and the awesome-gamedev-agent-skills contributors. Apache-2.0. Each folder contains the complete upstream LICENSE and NOTICE. Source files copied unchanged; see UPSTREAMS.json for pinned revision and hashes.

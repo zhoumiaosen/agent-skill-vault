@@ -201,6 +201,63 @@
       "files": {
         "SKILL.md": "4dea97a8c9759cb81a7541c504a2dbba9c4a3e64"
       }
+    },
+    {
+      "name": "game-feel",
+      "repository": "gamedev-skills/awesome-gamedev-agent-skills",
+      "revision": "d4b0e35550c55ae70bdfcab4ef5a0e94610438a9",
+      "path": "skills/disciplines/game-feel/SKILL.md",
+      "license": "Apache-2.0",
+      "modified": false,
+      "files": {
+        "SKILL.md": "54eba4a29c87b7e9303579889eaeb26f6dac7a5a",
+        "references/feedback-recipes.md": "3ebcc3dc9f2e95caaa132af907b5f213a8acb4f4"
+      }
+    },
+    {
+      "name": "save-systems",
+      "repository": "gamedev-skills/awesome-gamedev-agent-skills",
+      "revision": "d4b0e35550c55ae70bdfcab4ef5a0e94610438a9",
+      "path": "skills/disciplines/save-systems/SKILL.md",
+      "license": "Apache-2.0",
+      "modified": false,
+      "files": {
+        "SKILL.md": "1218ea11fdfa92de39dfc8c3c7f1c9ee43bff907",
+        "references/versioning-and-migration.md": "f39064e62f6a2b17ec551664b0fd7a19c86e4c7f"
+      }
+    },
+    {
+      "name": "create-game-assets",
+      "repository": "gamedev-skills/awesome-gamedev-agent-skills",
+      "revision": "d4b0e35550c55ae70bdfcab4ef5a0e94610438a9",
+      "path": "skills/disciplines/create-game-assets/SKILL.md",
+      "license": "Apache-2.0",
+      "modified": false,
+      "files": {
+        "SKILL.md": "44fed75da429247eff03a33f0f4987c020aa4be6",
+        "agents/openai.yaml": "cba4fa772706ab7d0dac58426d47dc22d969926e",
+        "assets/art-direction-brief.md": "faf39aea6196fcc9e97c6ea249da57f1149cd8eb",
+        "assets/asset-manifest.json": "548ee4867df3f4a9d49a5134e18b0759d046fd7c",
+        "references/art-direction.md": "3cc0543a7f5d58805ff03d133a3881a66e67b21b",
+        "references/provenance.md": "7285acb349e83370b0152f1f0414d4f419af23f1",
+        "references/raster-pipeline.md": "76cc48a55ef246f69486e86dafb9aaf40cadf60a",
+        "references/three-d-pipeline.md": "378ac41c499a099c8173dc62636e7e91ed2a8d4c",
+        "scripts/asset_report.py": "6eb94d625ee1574356019181dc6168855343f9dd",
+        "scripts/build_preview_sheet.py": "87a656c9dd69791a2aad0a3fd689abbbee670753",
+        "scripts/requirements.txt": "0f00984858108717cca519f581649778a1ebc9ed"
+      }
+    },
+    {
+      "name": "game-ui-ux",
+      "repository": "gamedev-skills/awesome-gamedev-agent-skills",
+      "revision": "d4b0e35550c55ae70bdfcab4ef5a0e94610438a9",
+      "path": "skills/disciplines/game-ui-ux/SKILL.md",
+      "license": "Apache-2.0",
+      "modified": false,
+      "files": {
+        "SKILL.md": "c84646755c3d8f2b96fd955d1d2706e911b45596",
+        "references/layout-and-flow.md": "139caf1d76828a303ba85b9446c75fa259610ea8"
+      }
     }
   ]
 }

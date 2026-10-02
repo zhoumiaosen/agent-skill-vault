@@ -2,7 +2,7 @@
 
 A storehouse for reusable AI-agent skills: focused instructions, useful references, and optional supporting scripts that make repeatable work easier to share and maintain.
 
-This repository includes fifteen public, licensed upstream skills. No installer or runtime integrations are included.
+This repository includes nineteen public, licensed upstream skills. No installer or runtime integrations are included.
 
 ## Skill catalog
 
@@ -27,6 +27,15 @@ This repository includes fifteen public, licensed upstream skills. No installer 
 - [game-design](skills/game-design/SKILL.md) — Engine-neutral guidance for mechanics, balance, progression and player experience. Markdown only; no engine integration required. [Source and compatibility](skills/game-design/SOURCE.md)
 
 These are third-party instructions, not permission to act. Review cleanup and package commands before use: upstream examples may delete generated outputs or Temp files, restore package files, stop an Editor, or modify assets. Preserve unsaved work and local changes; adapt paths and obtain any required approval. Optional pointers to other upstream skills are not bundled. Templates have not been compiled in Unity or runtime-tested here.
+
+### Additional game workflows
+
+- [game-feel](skills/game-feel/SKILL.md) — Feedback, hit-stop, camera shake and responsive interactions. Apache-2.0. [Compatibility and known limitations](skills/game-feel/SOURCE.md)
+- [save-systems](skills/save-systems/SKILL.md) — Save formats, versioning, backups and migration. Apache-2.0. [Compatibility and known limitations](skills/save-systems/SOURCE.md)
+- [create-game-assets](skills/create-game-assets/SKILL.md) — Art direction, provenance and optional raster inspection/preview utilities. Apache-2.0. [Compatibility and known limitations](skills/create-game-assets/SOURCE.md)
+- [game-ui-ux](skills/game-ui-ux/SKILL.md) — HUDs, menus, navigation and accessible layout. Apache-2.0. [Compatibility and known limitations](skills/game-ui-ux/SOURCE.md)
+
+The asset utilities optionally require Python 3.10+ and Pillow >=10,<13. The upstream color-limit checker has a known off-by-one issue; verify color limits independently. Preview output can overwrite the specified file. Save-system and game-feel code are illustrative sketches, not production-ready drop-ins. No runtime tests have been performed.
 
 ### Verification and licensing
 
