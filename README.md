@@ -2,7 +2,7 @@
 
 A storehouse for reusable AI-agent skills: focused instructions, useful references, and optional supporting scripts that make repeatable work easier to share and maintain.
 
-This repository includes twenty-four public, licensed upstream skills. No installer or runtime integrations are included.
+This repository includes twenty-nine public, licensed upstream skills. No installer or runtime integrations are included.
 
 ## Skill catalog
 
@@ -46,6 +46,16 @@ The asset utilities optionally require Python 3.10+ and Pillow >=10,<13. The ups
 - [audio-design](skills/audio-design/SKILL.md) — Mixer/bus architecture, dialogue ducking, SFX variation and adaptive exploration/combat music. Adapt Godot-oriented examples to the chosen audio engine. Apache-2.0. [Compatibility and known limitations](skills/audio-design/SOURCE.md)
 
 These five additions contain instruction and reference Markdown only; no installer, runtime integration or audio assets are bundled. Examples are guides to adapt and test, not production-ready drop-ins.
+
+### Controls, levels and Godot foundations
+
+- [unity-input-system](skills/unity-input-system/SKILL.md) — Unity Input Actions, gameplay/menu maps, device bindings and saved rebinding. Requires com.unity.inputsystem; add cancellation and lifecycle cleanup to the examples. Apache-2.0. [Compatibility and known limitations](skills/unity-input-system/SOURCE.md)
+- [unity-animation](skills/unity-animation/SKILL.md) — Animator state transitions, locomotion blend trees, layers and humanoid IK. Treat completion timing as illustrative and test interruptions with the actual clips. Apache-2.0. [Compatibility and known limitations](skills/unity-animation/SOURCE.md)
+- [level-design](skills/level-design/SKILL.md) — Authored blockouts, encounter pacing, exploration branches and key/ability gates. Validate progression with the actual traversal rules. Apache-2.0. [Compatibility and known limitations](skills/level-design/SOURCE.md)
+- [procedural-gen](skills/procedural-gen/SKILL.md) — Seeded dungeons, noise, weighted loot and connectivity checks. Algorithm sketches need input validation, bounds checks, bounded retries and engine adaptation. Apache-2.0. [Compatibility and known limitations](skills/procedural-gen/SOURCE.md)
+- [godot-fundamentals](skills/godot-fundamentals/SKILL.md) — Godot 4.x nodes, scenes, shared resources, typed GDScript, Input Map and editor verification. Check the installed engine version; headless import alone does not prove gameplay correctness. MIT. [Compatibility and known limitations](skills/godot-fundamentals/SOURCE.md)
+
+These five packages contain instruction and reference Markdown only, with license notices and separate compatibility notes. No engine, integration, installer or executable is added. The copied examples have not been run in Unity or Godot. Related-skill names are optional pointers; upstream unity-tilemap-2d maps conceptually to the vault's existing unity-tilemap package.
 
 ### Verification and licensing
 

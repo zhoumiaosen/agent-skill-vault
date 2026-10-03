@@ -27,3 +27,10 @@ Complete license notices accompany each package. All copied source files remain 
 ## RPG systems additions
 
 - rpg, dialogue-systems, game-ai, unity-scriptableobjects and audio-design: gamedev-skills/awesome-gamedev-agent-skills, Copyright 2026 Abhishek Barali and the awesome-gamedev-agent-skills contributors. Apache-2.0. Each folder contains the complete upstream LICENSE and NOTICE. All upstream skill and reference files are copied unchanged from revision d4b0e35550c55ae70bdfcab4ef5a0e94610438a9; see UPSTREAMS.json for source paths and blob hashes. Vault-authored SOURCE.md files document provenance and compatibility separately.
+
+## Controls, levels and Godot foundations
+
+- unity-input-system, unity-animation, level-design and procedural-gen: gamedev-skills/awesome-gamedev-agent-skills, Copyright 2026 Abhishek Barali and the awesome-gamedev-agent-skills contributors. Apache-2.0. Each directory contains the complete upstream LICENSE and NOTICE. All upstream skill and reference files are copied unchanged from revision d4b0e35550c55ae70bdfcab4ef5a0e94610438a9
+- godot-fundamentals: pbzona/godot-skills, Copyright (c) 2026 godot-skills contributors. MIT. The complete upstream LICENSE accompanies the unchanged skill and references from revision 0ad8f3c58d54580a57a1a6de3cd345a1d9376e3d
+
+See UPSTREAMS.json for exact source paths and Git blob hashes. Vault-authored SOURCE.md files document provenance, requirements, and known limitations separately. No endorsement or engine/runtime validation is implied.

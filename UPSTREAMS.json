@@ -1,5 +1,5 @@
 {
-  "retrieved": "2026-10-01",
+  "retrieved": "2026-10-03",
   "skills": [
     {
       "name": "frontend-design",
@@ -339,6 +339,88 @@
         "references/adaptive-music.md": "0c4dba7bb235d873bb7e3f7d0e5ff3b4f74d1ef4",
         "LICENSE": "c7fc0c6d59cb8129a0e30fe13f5a6118f3933c44",
         "NOTICE": "d4204881c3f79f39151a53a6aae476b188a8c51f"
+      }
+    },
+    {
+      "name": "unity-input-system",
+      "repository": "gamedev-skills/awesome-gamedev-agent-skills",
+      "revision": "d4b0e35550c55ae70bdfcab4ef5a0e94610438a9",
+      "path": "skills/unity/unity-input-system/SKILL.md",
+      "blob_sha": "e3d116a60680b245815795e19e53f171a5a1e2af",
+      "license": "Apache-2.0",
+      "modified": false,
+      "retrieved": "2026-10-03",
+      "files": {
+        "SKILL.md": "e3d116a60680b245815795e19e53f171a5a1e2af",
+        "references/rebinding.md": "e11c0b3f96e7527d93a7e1bd8060e278f168abae",
+        "LICENSE": "c7fc0c6d59cb8129a0e30fe13f5a6118f3933c44",
+        "NOTICE": "d4204881c3f79f39151a53a6aae476b188a8c51f"
+      }
+    },
+    {
+      "name": "unity-animation",
+      "repository": "gamedev-skills/awesome-gamedev-agent-skills",
+      "revision": "d4b0e35550c55ae70bdfcab4ef5a0e94610438a9",
+      "path": "skills/unity/unity-animation/SKILL.md",
+      "blob_sha": "972ef2406c72316583b4db0339fddd06eb0178a9",
+      "license": "Apache-2.0",
+      "modified": false,
+      "retrieved": "2026-10-03",
+      "files": {
+        "SKILL.md": "972ef2406c72316583b4db0339fddd06eb0178a9",
+        "references/blend-trees-and-ik.md": "42f04a84d9383470b4917f9e8a7c05f5b71443dc",
+        "LICENSE": "c7fc0c6d59cb8129a0e30fe13f5a6118f3933c44",
+        "NOTICE": "d4204881c3f79f39151a53a6aae476b188a8c51f"
+      }
+    },
+    {
+      "name": "level-design",
+      "repository": "gamedev-skills/awesome-gamedev-agent-skills",
+      "revision": "d4b0e35550c55ae70bdfcab4ef5a0e94610438a9",
+      "path": "skills/disciplines/level-design/SKILL.md",
+      "blob_sha": "f46ebe758c357a7e78d52f7c15ec6b9f00fe2c33",
+      "license": "Apache-2.0",
+      "modified": false,
+      "retrieved": "2026-10-03",
+      "files": {
+        "SKILL.md": "f46ebe758c357a7e78d52f7c15ec6b9f00fe2c33",
+        "references/pacing-and-flow.md": "62f19f71cea911dd9ea0d8ed2ed6bc04fd323cf3",
+        "LICENSE": "c7fc0c6d59cb8129a0e30fe13f5a6118f3933c44",
+        "NOTICE": "d4204881c3f79f39151a53a6aae476b188a8c51f"
+      }
+    },
+    {
+      "name": "procedural-gen",
+      "repository": "gamedev-skills/awesome-gamedev-agent-skills",
+      "revision": "d4b0e35550c55ae70bdfcab4ef5a0e94610438a9",
+      "path": "skills/disciplines/procedural-gen/SKILL.md",
+      "blob_sha": "4f635f994401783ed0388cba2e4d2c199dca61b4",
+      "license": "Apache-2.0",
+      "modified": false,
+      "retrieved": "2026-10-03",
+      "files": {
+        "SKILL.md": "4f635f994401783ed0388cba2e4d2c199dca61b4",
+        "references/dungeon-generation.md": "dd9cd598866fdc778fd7aa11f51685d116abb2ee",
+        "references/noise.md": "4f87481397542720beaa64547fe99f781be25084",
+        "LICENSE": "c7fc0c6d59cb8129a0e30fe13f5a6118f3933c44",
+        "NOTICE": "d4204881c3f79f39151a53a6aae476b188a8c51f"
+      }
+    },
+    {
+      "name": "godot-fundamentals",
+      "repository": "pbzona/godot-skills",
+      "revision": "0ad8f3c58d54580a57a1a6de3cd345a1d9376e3d",
+      "path": "skills/godot-fundamentals/SKILL.md",
+      "blob_sha": "917756a34d4b6c71703c80aa01964b0e9bfc5e3a",
+      "license": "MIT",
+      "modified": false,
+      "retrieved": "2026-10-03",
+      "files": {
+        "SKILL.md": "917756a34d4b6c71703c80aa01964b0e9bfc5e3a",
+        "references/editor-debugging.md": "1586ab422ce7980f0c8fb36b790bfdf925aa8d6c",
+        "references/nodes-scenes-resources.md": "7b3a96644d70b6dae893b5a82af46364b44b734b",
+        "references/typed-gdscript-input.md": "65f621662bd1a6cd5e8a0aa53dce9d7356a742f8",
+        "LICENSE": "738bdf88b82093b32c7c15cda781b9a263a02c40"
       }
     }
   ]
