@@ -132,6 +132,8 @@ Link supporting files with relative paths. State assumptions, explain failure ha
 
 ## Adding skills
 
+Run the [offline validator and regression tests](docs/validation.md) before submitting changes. GitHub Actions runs the same checks on pushes and pull requests.
+
 1. Create `skills/<skill-name>/SKILL.md` using a descriptive, lowercase name with hyphens.
 2. Add only the references, scripts, and assets needed for that task.
 3. Document prerequisites, permissions, expected outputs, and any agent-specific behavior.
