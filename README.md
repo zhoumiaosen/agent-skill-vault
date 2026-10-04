@@ -2,7 +2,7 @@
 
 A storehouse for reusable AI-agent skills: focused instructions, useful references, and optional supporting scripts that make repeatable work easier to share and maintain.
 
-This repository includes twenty-nine public, licensed upstream skills. No installer or runtime integrations are included.
+This repository includes thirty-four public, licensed upstream skills. No installer or runtime integrations are included.
 
 ## Skill catalog
 
@@ -56,6 +56,16 @@ These five additions contain instruction and reference Markdown only; no install
 - [godot-fundamentals](skills/godot-fundamentals/SKILL.md) — Godot 4.x nodes, scenes, shared resources, typed GDScript, Input Map and editor verification. Check the installed engine version; headless import alone does not prove gameplay correctness. MIT. [Compatibility and known limitations](skills/godot-fundamentals/SOURCE.md)
 
 These five packages contain instruction and reference Markdown only, with license notices and separate compatibility notes. No engine, integration, installer or executable is added. The copied examples have not been run in Unity or Godot. Related-skill names are optional pointers; upstream unity-tilemap-2d maps conceptually to the vault's existing unity-tilemap package.
+
+### Localization, accessibility and integration checks
+
+- [game-localization](skills/game-localization/SKILL.md) — Stable string IDs, locale/font fallbacks, dynamic formatting, and language changes that preserve gameplay state. Engine-neutral checklist; no translation service or engine integration bundled. MIT. [Source and compatibility](skills/game-localization/SOURCE.md)
+- [a11y-controls](skills/a11y-controls/SKILL.md) — Action remapping, hold/toggle alternatives, scalable text, non-color cues, and reduced-flash/motion checks. Adapt to supported devices and preferences; not accessibility certification. MIT. [Source and compatibility](skills/a11y-controls/SOURCE.md)
+- [cutscene-handoff](skills/cutscene-handoff/SKILL.md) — Safe cinematic entry, skip, interruption, and restoration of input, camera, UI, and gameplay state. No Timeline/Sequencer implementation included. MIT. [Source and compatibility](skills/cutscene-handoff/SOURCE.md)
+- [collision-layers](skills/collision-layers/SKILL.md) — Stable collision/query categories and an interaction matrix for actors, attacks, hazards, camera probes, and IK. Map the policy to the actual engine's layers/masks; it does not implement physics or damage resolution. MIT. [Source and compatibility](skills/collision-layers/SOURCE.md)
+- [requesting-code-review](skills/requesting-code-review/SKILL.md) — Independent review against requirements and an explicit Git revision range, including the complete reviewer prompt template. Requires Git and subagent support; review findings do not authorize merging. MIT. [Source and compatibility](skills/requesting-code-review/SOURCE.md)
+
+The first four are unchanged, attributed discipline extracts from jammyfu/open-game-skills, whose full-pack installation guidance differs from this curated vault layout. Their directories contain only SKILL.md, with no direct local file links or runtime dependencies; named sibling skills are ownership pointers rather than bundled integrations. The vault does not include that pack's dispatcher, shared contract, or engine adapters. All five additions contain Markdown instructions and license notices only. They have been statically reviewed, not runtime-tested. See each SOURCE.md for packaging, engine, dispatch, and review-range limitations.
 
 ### Verification and licensing
 

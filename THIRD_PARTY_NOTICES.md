@@ -34,3 +34,10 @@ Complete license notices accompany each package. All copied source files remain 
 - godot-fundamentals: pbzona/godot-skills, Copyright (c) 2026 godot-skills contributors. MIT. The complete upstream LICENSE accompanies the unchanged skill and references from revision 0ad8f3c58d54580a57a1a6de3cd345a1d9376e3d
 
 See UPSTREAMS.json for exact source paths and Git blob hashes. Vault-authored SOURCE.md files document provenance, requirements, and known limitations separately. No endorsement or engine/runtime validation is implied.
+
+## Localization, accessibility and integration checks
+
+- game-localization, a11y-controls, cutscene-handoff and collision-layers: jammyfu/open-game-skills, Copyright (c) 2026 jammyfu / PaintingCoder. MIT. Each directory contains the complete upstream LICENSE and an unchanged SKILL.md from revision 4ed0e224e8d8f56c8222a3de6fd439aa7abad4e1. These are curated discipline extracts, not the upstream full-pack installation; separate SOURCE.md notes describe that boundary and the unbundled sibling/engine responsibilities.
+- requesting-code-review (including code-reviewer.md): obra/superpowers, Copyright (c) 2025 Jesse Vincent. MIT. The complete upstream LICENSE accompanies the unchanged skill and reviewer template from revision 8ca22dba9a94f28898bbce59f2537ff4d87c747d.
+
+Exact source paths and Git blob hashes are recorded in UPSTREAMS.json. SOURCE.md files are vault-authored provenance and compatibility notes. No endorsement, engine validation, or cross-agent runtime validation is implied.

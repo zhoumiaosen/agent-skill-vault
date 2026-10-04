@@ -1,5 +1,5 @@
 {
-  "retrieved": "2026-10-03",
+  "retrieved": "2026-10-04",
   "skills": [
     {
       "name": "frontend-design",
@@ -421,6 +421,77 @@
         "references/nodes-scenes-resources.md": "7b3a96644d70b6dae893b5a82af46364b44b734b",
         "references/typed-gdscript-input.md": "65f621662bd1a6cd5e8a0aa53dce9d7356a742f8",
         "LICENSE": "738bdf88b82093b32c7c15cda781b9a263a02c40"
+      }
+    },
+    {
+      "name": "game-localization",
+      "repository": "jammyfu/open-game-skills",
+      "revision": "4ed0e224e8d8f56c8222a3de6fd439aa7abad4e1",
+      "path": "skills/disciplines/game-localization/SKILL.md",
+      "blob_sha": "aa7c2c30b43184f224822df17dae648e6c0046cc",
+      "license": "MIT",
+      "modified": false,
+      "retrieved": "2026-10-04",
+      "files": {
+        "SKILL.md": "aa7c2c30b43184f224822df17dae648e6c0046cc",
+        "LICENSE": "4dc60b54893a7f9957aadc02f86f5e98fc2c1235"
+      }
+    },
+    {
+      "name": "a11y-controls",
+      "repository": "jammyfu/open-game-skills",
+      "revision": "4ed0e224e8d8f56c8222a3de6fd439aa7abad4e1",
+      "path": "skills/disciplines/a11y-controls/SKILL.md",
+      "blob_sha": "5fcd3c8f0596e8bff9789bc6c88d2f2f0a3f8713",
+      "license": "MIT",
+      "modified": false,
+      "retrieved": "2026-10-04",
+      "files": {
+        "SKILL.md": "5fcd3c8f0596e8bff9789bc6c88d2f2f0a3f8713",
+        "LICENSE": "4dc60b54893a7f9957aadc02f86f5e98fc2c1235"
+      }
+    },
+    {
+      "name": "cutscene-handoff",
+      "repository": "jammyfu/open-game-skills",
+      "revision": "4ed0e224e8d8f56c8222a3de6fd439aa7abad4e1",
+      "path": "skills/disciplines/cutscene-handoff/SKILL.md",
+      "blob_sha": "c5e651f38a81fd10700a9918ba00bfaccfef6fc4",
+      "license": "MIT",
+      "modified": false,
+      "retrieved": "2026-10-04",
+      "files": {
+        "SKILL.md": "c5e651f38a81fd10700a9918ba00bfaccfef6fc4",
+        "LICENSE": "4dc60b54893a7f9957aadc02f86f5e98fc2c1235"
+      }
+    },
+    {
+      "name": "collision-layers",
+      "repository": "jammyfu/open-game-skills",
+      "revision": "4ed0e224e8d8f56c8222a3de6fd439aa7abad4e1",
+      "path": "skills/disciplines/collision-layers/SKILL.md",
+      "blob_sha": "282eeda56f191859ada4df7030a4a02e97e26fde",
+      "license": "MIT",
+      "modified": false,
+      "retrieved": "2026-10-04",
+      "files": {
+        "SKILL.md": "282eeda56f191859ada4df7030a4a02e97e26fde",
+        "LICENSE": "4dc60b54893a7f9957aadc02f86f5e98fc2c1235"
+      }
+    },
+    {
+      "name": "requesting-code-review",
+      "repository": "obra/superpowers",
+      "revision": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+      "path": "skills/requesting-code-review/SKILL.md",
+      "blob_sha": "6d995da5c7d8d6c5a3cc63ddb701427f88ec2021",
+      "license": "MIT",
+      "modified": false,
+      "retrieved": "2026-10-04",
+      "files": {
+        "SKILL.md": "6d995da5c7d8d6c5a3cc63ddb701427f88ec2021",
+        "code-reviewer.md": "6d358b5d7d450c83cacbe450b7dbd4e673b694ad",
+        "LICENSE": "abf0390320aa14406af7a520b9b0739fdda9bf08"
       }
     }
   ]
