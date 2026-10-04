@@ -2,7 +2,7 @@
 
 A storehouse for reusable AI-agent skills: focused instructions, useful references, and optional supporting scripts that make repeatable work easier to share and maintain.
 
-This repository includes thirty-four public, licensed upstream skills. No installer or runtime integrations are included.
+This repository includes thirty-seven public, licensed skills: thirty-four curated upstream skills with their source content preserved unchanged, and three clearly marked adaptations for Unity RPG/game-development workflows. No installer or runtime integrations are included.
 
 ## Skill catalog
 
@@ -67,9 +67,19 @@ These five packages contain instruction and reference Markdown only, with licens
 
 The first four are unchanged, attributed discipline extracts from jammyfu/open-game-skills, whose full-pack installation guidance differs from this curated vault layout. Their directories contain only SKILL.md, with no direct local file links or runtime dependencies; named sibling skills are ownership pointers rather than bundled integrations. The vault does not include that pack's dispatcher, shared contract, or engine adapters. All five additions contain Markdown instructions and license notices only. They have been statically reviewed, not runtime-tested. See each SOURCE.md for packaging, engine, dispatch, and review-range limitations.
 
+### Adapted engineering workflows
+
+- [source-driven-development](skills/source-driven-development/SKILL.md) — Adapted Unity-first version/API verification with actual package-resolution evidence and explicit runtime-verification limits. Portable to Godot, Unreal and backend integrations. MIT. [Adaptation source and changes](skills/source-driven-development/SOURCE.md)
+- [constraint-driven-development](skills/constraint-driven-development/SKILL.md) — Adapted project-owned quality gates, reproducible game performance/memory budgets, and protection against weakened checks. No universal thresholds, automatic installs or executable floor guard. MIT. [Adaptation source and changes](skills/constraint-driven-development/SOURCE.md)
+- [api-and-interface-design](skills/api-and-interface-design/SKILL.md) — Adapted Unity C# module, command/event, lifetime, ownership and save contracts; includes duplicate-reward and legacy-save concerns, with conditional backend guidance. MIT. [Adaptation source and changes](skills/api-and-interface-design/SOURCE.md)
+
+These three are substantially rewritten derivatives of addyosmani/agent-skills at revision 1401c8b8030e023baeebb31781a6653fe8e93026, not verbatim upstream copies. Each package retains the complete MIT notice (Copyright (c) 2025 Addy Osmani) and a change summary. UPSTREAMS.json separates the original upstream source hashes from the actual delivered adaptation hashes. No author or vendor endorsement is implied.
+
+The [bilingual review guide](docs/engineering-adaptations/README.md) and [validation report](docs/engineering-adaptations/VALIDATION.md), together with each SOURCE.md, preserve the original 2026-10-04 draft-delivery record, including its pre-publication status wording. Inclusion in this repository publishes those review drafts; it does not install them or certify engine/runtime behavior. Skill instruction and provenance files are unchanged from the reviewed deliverable; only the review guide's relative links are adjusted for this repository layout.
+
 ### Verification and licensing
 
-The skill text is copied unchanged from pinned public upstream revisions. License copies and provenance accompany each skill. See [UPSTREAMS.json](UPSTREAMS.json) and [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). The original ten skills are instruction-only. The game-development collection also includes upstream C# templates and a Python comparison script; adding them here does not install or execute them. Content and links were reviewed, but cross-agent runtime behavior has not been tested. Each upstream license applies to its corresponding files; no blanket relicense is implied.
+The original thirty-four curated skills preserve their upstream source content unchanged. The three adapted engineering skills are explicitly marked modified derivatives, with original source hashes and delivered-file hashes recorded separately. License copies and provenance accompany each skill. See [UPSTREAMS.json](UPSTREAMS.json) and [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). The original ten skills are instruction-only. The game-development collection also includes upstream C# templates and a Python comparison script; adding them here does not install or execute them. Content and links were reviewed, but cross-agent runtime behavior has not been tested. Each upstream license applies to its corresponding files; no blanket relicense is implied.
 
 ## Suggested layout
 

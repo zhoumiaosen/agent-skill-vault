@@ -493,6 +493,134 @@
         "code-reviewer.md": "6d358b5d7d450c83cacbe450b7dbd4e673b694ad",
         "LICENSE": "abf0390320aa14406af7a520b9b0739fdda9bf08"
       }
+    },
+    {
+      "name": "source-driven-development",
+      "repository": "addyosmani/agent-skills",
+      "revision": "1401c8b8030e023baeebb31781a6653fe8e93026",
+      "path": "skills/source-driven-development/SKILL.md",
+      "license": "MIT",
+      "copyright": "Copyright (c) 2025 Addy Osmani",
+      "modified": true,
+      "content_kind": "adapted-and-rewritten",
+      "retrieved": "2026-10-04",
+      "adapted": "2026-10-04",
+      "upstream_files": {
+        "skills/source-driven-development/SKILL.md": {
+          "git_blob_sha": "2704f0e130bc4659951aa552373914b2d63d18c9",
+          "role": "adaptation input"
+        },
+        "LICENSE": {
+          "git_blob_sha": "d67778ada6b9cda6227e9130da182c13e73c8b2e",
+          "role": "copied unchanged"
+        }
+      },
+      "files": {
+        "SKILL.md": "788edbb2114d280665f3ababc1c96ab233baadee",
+        "SOURCE.md": "fd65a9f30c25d0d289d7a2507362f27e77487c1c",
+        "LICENSE": "d67778ada6b9cda6227e9130da182c13e73c8b2e"
+      },
+      "sha256": {
+        "SKILL.md": "84dfa2728e5cd2e3f456fc76aaf66ea1eeb0e23cb941db97abc6b31a52325856",
+        "SOURCE.md": "8e6ed3d57f8cb9de372dcc329cc20175a7b374f4b62213fd7221db3c149a0140",
+        "LICENSE": "6f202f8bd568cd730dbb2b0d1f8e243bc74c2fa1f64dbce9b2c7ea08bd5c9fd7"
+      },
+      "hash_semantics": "files contains Git blob SHA-1 hashes of the actual delivered vault files; sha256 hashes the same bytes. upstream_files contains original source Git blob hashes at revision, not hashes of the adaptations.",
+      "file_origins": {
+        "SKILL.md": "adapted and substantially rewritten from the pinned upstream skill",
+        "SOURCE.md": "adaptation provenance document; preserved from the delivered review draft",
+        "LICENSE": "unchanged original upstream MIT license"
+      },
+      "adaptation_summary": "Unity engine/package-resolution and target-platform evidence; authoritative versioned documentation; distinct compile and runtime verification states; Godot/Unreal/backend mappings.",
+      "verification_scope": "Static validation and fictional scenario/document reviews only; no engine, player, device, backend or cross-agent runtime validation.",
+      "delivery_state_note": "SOURCE.md preserves the original 2026-10-04 pre-publication draft status; repository inclusion is recorded by this entry and Git history."
+    },
+    {
+      "name": "constraint-driven-development",
+      "repository": "addyosmani/agent-skills",
+      "revision": "1401c8b8030e023baeebb31781a6653fe8e93026",
+      "path": "skills/constraint-driven-development/SKILL.md",
+      "license": "MIT",
+      "copyright": "Copyright (c) 2025 Addy Osmani",
+      "modified": true,
+      "content_kind": "adapted-and-rewritten",
+      "retrieved": "2026-10-04",
+      "adapted": "2026-10-04",
+      "upstream_files": {
+        "skills/constraint-driven-development/SKILL.md": {
+          "git_blob_sha": "3028719c0bad95b3e439024b2f52255c0c9f1ffe",
+          "role": "adaptation input"
+        },
+        "LICENSE": {
+          "git_blob_sha": "d67778ada6b9cda6227e9130da182c13e73c8b2e",
+          "role": "copied unchanged"
+        },
+        "skills/constraint-driven-development/references/floor-guard.md": {
+          "git_blob_sha": "0fa8a6946149b9f31b79f09f7cd1be6b3ac9f9e7",
+          "role": "consulted only; implementation not bundled"
+        }
+      },
+      "files": {
+        "SKILL.md": "3782b669351707a99b10b6c879d1bd8569141398",
+        "SOURCE.md": "42b87a8b0b8cb9f38e685ebafa51d54e4d9d2391",
+        "LICENSE": "d67778ada6b9cda6227e9130da182c13e73c8b2e"
+      },
+      "sha256": {
+        "SKILL.md": "b81b93bc93a542ce0cb508b8824efc7e751d42c825afa83db98e5e059c3a8295",
+        "SOURCE.md": "768d8c1d6d44f5fe48cef7712c076e8f9c46ea9134c7459799710fc721a76d13",
+        "LICENSE": "6f202f8bd568cd730dbb2b0d1f8e243bc74c2fa1f64dbce9b2c7ea08bd5c9fd7"
+      },
+      "hash_semantics": "files contains Git blob SHA-1 hashes of the actual delivered vault files; sha256 hashes the same bytes. upstream_files contains original source Git blob hashes at revision, not hashes of the adaptations.",
+      "file_origins": {
+        "SKILL.md": "adapted and substantially rewritten from the pinned upstream skill",
+        "SOURCE.md": "adaptation provenance document; preserved from the delivered review draft",
+        "LICENSE": "unchanged original upstream MIT license"
+      },
+      "adaptation_summary": "Project-owned game quality budgets and reproducible measurements; explicit gate/exception ownership; semantic diff-review contract instead of the upstream Node regex guard; no universal numeric defaults.",
+      "verification_scope": "Static validation and fictional scenario/document reviews only; no engine, player, device, backend or cross-agent runtime validation.",
+      "delivery_state_note": "SOURCE.md preserves the original 2026-10-04 pre-publication draft status; repository inclusion is recorded by this entry and Git history."
+    },
+    {
+      "name": "api-and-interface-design",
+      "repository": "addyosmani/agent-skills",
+      "revision": "1401c8b8030e023baeebb31781a6653fe8e93026",
+      "path": "skills/api-and-interface-design/SKILL.md",
+      "license": "MIT",
+      "copyright": "Copyright (c) 2025 Addy Osmani",
+      "modified": true,
+      "content_kind": "adapted-and-rewritten",
+      "retrieved": "2026-10-04",
+      "adapted": "2026-10-04",
+      "upstream_files": {
+        "skills/api-and-interface-design/SKILL.md": {
+          "git_blob_sha": "3e2e37f8f4fba2c66f9f1599eaf01a55ae3f3e33",
+          "role": "adaptation input"
+        },
+        "LICENSE": {
+          "git_blob_sha": "d67778ada6b9cda6227e9130da182c13e73c8b2e",
+          "role": "copied unchanged"
+        }
+      },
+      "files": {
+        "SKILL.md": "a496b8676fe7fb27caec1a6cbef1ef91efc4fcb8",
+        "SOURCE.md": "0585069414a4e863154044eea493404e4fe1395b",
+        "LICENSE": "d67778ada6b9cda6227e9130da182c13e73c8b2e"
+      },
+      "sha256": {
+        "SKILL.md": "4bb224b719710b61093a90a68522dbb80bcc1ea33df006d207dbd4121874ff2f",
+        "SOURCE.md": "f378d675d41eed8681a15d0e45739e72bfacf811a05578134b59da80d406189f",
+        "LICENSE": "6f202f8bd568cd730dbb2b0d1f8e243bc74c2fa1f64dbce9b2c7ea08bd5c9fd7"
+      },
+      "hash_semantics": "files contains Git blob SHA-1 hashes of the actual delivered vault files; sha256 hashes the same bytes. upstream_files contains original source Git blob hashes at revision, not hashes of the adaptations.",
+      "file_origins": {
+        "SKILL.md": "adapted and substantially rewritten from the pinned upstream skill",
+        "SOURCE.md": "adaptation provenance document; preserved from the delivered review draft",
+        "LICENSE": "unchanged original upstream MIT license"
+      },
+      "adaptation_summary": "Unity C# module, command/event, async lifetime, ownership and save contracts; durable reward deduplication and legacy migration ambiguity; backend/network guidance is conditional.",
+      "verification_scope": "Static validation and fictional scenario/document reviews only; no engine, player, device, backend or cross-agent runtime validation.",
+      "delivery_state_note": "SOURCE.md preserves the original 2026-10-04 pre-publication draft status; repository inclusion is recorded by this entry and Git history."
     }
-  ]
+  ],
+  "hash_semantics": "Existing modified=false entries retain their original upstream hash fields. In modified=true entries, files/sha256 describe delivered vault bytes, while upstream_files describes original source bytes. SOURCE.md is vault/adaptation provenance, not upstream skill text."
 }
