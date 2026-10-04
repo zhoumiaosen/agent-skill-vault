@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "dataset_sha256": "79e7299ebd2eb28bb5111089980459ff31fed9565464f86c0ecb00515440a5b9",
+  "environment": {
+    "provider": null,
+    "model": null,
+    "model_version": null,
+    "settings": null,
+    "run_date": null,
+    "vault_revision": null,
+    "operator": null
+  },
+  "runs": [
+    {
+      "case_id": "task-stale-results-en",
+      "status": "not_run",
+      "reason": "No agent/model execution performed.",
+      "cost_usd": null,
+      "context": null,
+      "output": null,
+      "assessment": {
+        "verdict": "not_assessed",
+        "reviewer": null,
+        "notes": null
+      }
+    },
+    {
+      "case_id": "task-stale-results-zh",
+      "status": "not_run",
+      "reason": "No agent/model execution performed.",
+      "cost_usd": null,
+      "context": null,
+      "output": null,
+      "assessment": {
+        "verdict": "not_assessed",
+        "reviewer": null,
+        "notes": null
+      }
+    },
+    {
+      "case_id": "task-incompatible-windows-en",
+      "status": "not_run",
+      "reason": "No agent/model execution performed.",
+      "cost_usd": null,
+      "context": null,
+      "output": null,
+      "assessment": {
+        "verdict": "not_assessed",
+        "reviewer": null,
+        "notes": null
+      }
+    },
+    {
+      "case_id": "task-incompatible-windows-zh",
+      "status": "not_run",
+      "reason": "No agent/model execution performed.",
+      "cost_usd": null,
+      "context": null,
+      "output": null,
+      "assessment": {
+        "verdict": "not_assessed",
+        "reviewer": null,
+        "notes": null
+      }
+    },
+    {
+      "case_id": "task-review-contract-en",
+      "status": "not_run",
+      "reason": "No agent/model execution performed.",
+      "cost_usd": null,
+      "context": null,
+      "output": null,
+      "assessment": {
+        "verdict": "not_assessed",
+        "reviewer": null,
+        "notes": null
+      }
+    },
+    {
+      "case_id": "task-review-contract-zh",
+      "status": "not_run",
+      "reason": "No agent/model execution performed.",
+      "cost_usd": null,
+      "context": null,
+      "output": null,
+      "assessment": {
+        "verdict": "not_assessed",
+        "reviewer": null,
+        "notes": null
+      }
+    }
+  ]
+}

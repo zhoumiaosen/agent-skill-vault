@@ -1,0 +1,18 @@
+{
+  "fixture_kind": "synthetic",
+  "before": {
+    "instrument": "editor-windowed",
+    "platform": "desktop",
+    "seed": 42,
+    "frames": 90,
+    "p95_ms": 18.0
+  },
+  "after": {
+    "instrument": "player-device",
+    "platform": "phone",
+    "seed": 42,
+    "frames": 90,
+    "p95_ms": 12.0
+  },
+  "engine_executed": false
+}

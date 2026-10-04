@@ -1,0 +1,14 @@
+{
+  "fixture_kind": "synthetic",
+  "invocation": {
+    "run_id": "run-2026-10-04-B",
+    "exit_code": 0,
+    "fresh_log": false
+  },
+  "results": {
+    "run_id": "run-2026-10-03-A",
+    "passed": 6,
+    "failed": 0
+  },
+  "engine_executed": false
+}

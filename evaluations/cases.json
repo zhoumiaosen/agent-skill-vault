@@ -1,0 +1,922 @@
+{
+  "schema_version": 1,
+  "context_policy": "catalog-then-complete-packages",
+  "cases": [
+    {
+      "id": "unity-runtime-failure-en",
+      "pair_id": "unity-runtime-failure",
+      "language": "en",
+      "kind": "routing",
+      "boundary": "unity-debug/unity-profiling",
+      "prompt": "In Unity, pressing Play leaves the character motionless. Diagnose the runtime failure and verify the fix with fresh logs and test evidence. I am not investigating frame cost.",
+      "expected": {
+        "action": "select",
+        "acceptable_skill_sets": [
+          [
+            "unity-debug"
+          ]
+        ],
+        "forbidden_skills": [
+          "unity-profiling"
+        ],
+        "rationale": "A functional runtime failure needs harness/log verification; no performance measurement is requested.",
+        "clarification": null
+      },
+      "evidence_criteria": []
+    },
+    {
+      "id": "unity-runtime-failure-zh",
+      "pair_id": "unity-runtime-failure",
+      "language": "zh-CN",
+      "kind": "routing",
+      "boundary": "unity-debug/unity-profiling",
+      "prompt": "Unity 中按下 Play 后角色完全不动。请诊断运行时故障，并用本次运行的日志和测试证据验证修复。我现在不是在调查帧耗时。",
+      "expected": {
+        "action": "select",
+        "acceptable_skill_sets": [
+          [
+            "unity-debug"
+          ]
+        ],
+        "forbidden_skills": [
+          "unity-profiling"
+        ],
+        "rationale": "这是运行时功能故障，需要核实测试工具与日志；没有要求性能测量。",
+        "clarification": null
+      },
+      "evidence_criteria": []
+    },
+    {
+      "id": "unity-performance-window-en",
+      "pair_id": "unity-performance-window",
+      "language": "en",
+      "kind": "routing",
+      "boundary": "unity-debug/unity-profiling",
+      "prompt": "The Unity game works, but the third pickup causes a hitch. Compare before/after p95 frame time, GC allocation and discarded work using the same instrument and seed.",
+      "expected": {
+        "action": "select",
+        "acceptable_skill_sets": [
+          [
+            "unity-profiling"
+          ]
+        ],
+        "forbidden_skills": [
+          "unity-debug"
+        ],
+        "rationale": "The primary task is comparable performance measurement, not functional triage.",
+        "clarification": null
+      },
+      "evidence_criteria": []
+    },
+    {
+      "id": "unity-performance-window-zh",
+      "pair_id": "unity-performance-window",
+      "language": "zh-CN",
+      "kind": "routing",
+      "boundary": "unity-debug/unity-profiling",
+      "prompt": "Unity 游戏功能正常，但第三个拾取物出现时会卡顿。请使用相同测量模式和随机种子，比较改动前后的 p95 帧时间、GC 分配和被丢弃的工作量。",
+      "expected": {
+        "action": "select",
+        "acceptable_skill_sets": [
+          [
+            "unity-profiling"
+          ]
+        ],
+        "forbidden_skills": [
+          "unity-debug"
+        ],
+        "rationale": "主要任务是可比较的性能测量，而不是功能故障排查。",
+        "clarification": null
+      },
+      "evidence_criteria": []
+    },
+    {
+      "id": "unity-outside-scope-en",
+      "pair_id": "unity-outside-scope",
+      "language": "en",
+      "kind": "routing",
+      "boundary": "unity-debug/unity-profiling",
+      "prompt": "Book a train ticket for tomorrow. There is no software project or game task.",
+      "expected": {
+        "action": "no_skill",
+        "acceptable_skill_sets": [],
+        "forbidden_skills": [
+          "unity-debug",
+          "unity-profiling"
+        ],
+        "rationale": "Travel booking is outside this skill collection.",
+        "clarification": null
+      },
+      "evidence_criteria": []
+    },
+    {
+      "id": "unity-outside-scope-zh",
+      "pair_id": "unity-outside-scope",
+      "language": "zh-CN",
+      "kind": "routing",
+      "boundary": "unity-debug/unity-profiling",
+      "prompt": "请帮我订明天的火车票。这不是软件项目或游戏开发任务。",
+      "expected": {
+        "action": "no_skill",
+        "acceptable_skill_sets": [],
+        "forbidden_skills": [
+          "unity-debug",
+          "unity-profiling"
+        ],
+        "rationale": "订票不在此技能集合的范围内。",
+        "clarification": null
+      },
+      "evidence_criteria": []
+    },
+    {
+      "id": "unity-unclear-slow-en",
+      "pair_id": "unity-unclear-slow",
+      "language": "en",
+      "kind": "routing",
+      "boundary": "unity-debug/unity-profiling",
+      "prompt": "The Unity game feels wrong after yesterday’s change. Help me investigate; I have not said whether actions fail or frames are slow.",
+      "expected": {
+        "action": "clarify",
+        "acceptable_skill_sets": [],
+        "forbidden_skills": [],
+        "rationale": "The symptom is insufficient to distinguish functional failure from performance work.",
+        "clarification": "Does an action fail, or is behavior correct but frame pacing slow? What reproducible situation shows it?"
+      },
+      "evidence_criteria": []
+    },
+    {
+      "id": "unity-unclear-slow-zh",
+      "pair_id": "unity-unclear-slow",
+      "language": "zh-CN",
+      "kind": "routing",
+      "boundary": "unity-debug/unity-profiling",
+      "prompt": "昨天改动后 Unity 游戏感觉不对。帮我查一下；我还没有说明是操作失效还是帧变慢。",
+      "expected": {
+        "action": "clarify",
+        "acceptable_skill_sets": [],
+        "forbidden_skills": [],
+        "rationale": "现有症状不足以区分功能故障与性能问题。",
+        "clarification": "是某个操作失效，还是功能正确但帧节奏变慢？怎样稳定复现？"
+      },
+      "evidence_criteria": []
+    },
+    {
+      "id": "game-hud-focus-en",
+      "pair_id": "game-hud-focus",
+      "language": "en",
+      "kind": "routing",
+      "boundary": "game-ui-ux/frontend-design",
+      "prompt": "Build an in-game inventory HUD that respects notches and ultrawide screens, restores controller focus after closing settings, and updates health from events.",
+      "expected": {
+        "action": "select",
+        "acceptable_skill_sets": [
+          [
+            "game-ui-ux"
+          ]
+        ],
+        "forbidden_skills": [
+          "frontend-design"
+        ],
+        "rationale": "This concerns game UI state, focus, scaling and event wiring.",
+        "clarification": null
+      },
+      "evidence_criteria": []
+    },
+    {
+      "id": "game-hud-focus-zh",
+      "pair_id": "game-hud-focus",
+      "language": "zh-CN",
+      "kind": "routing",
+      "boundary": "game-ui-ux/frontend-design",
+      "prompt": "请做游戏内背包 HUD：适配刘海屏和超宽屏，关闭设置后恢复手柄焦点，并通过事件更新生命值。",
+      "expected": {
+        "action": "select",
+        "acceptable_skill_sets": [
+          [
+            "game-ui-ux"
+          ]
+        ],
+        "forbidden_skills": [
+          "frontend-design"
+        ],
+        "rationale": "任务涉及游戏 UI 状态、焦点、缩放与事件绑定。",
+        "clarification": null
+      },
+      "evidence_criteria": []
+    },
+    {
+      "id": "web-visual-direction-en",
+      "pair_id": "web-visual-direction",
+      "language": "en",
+      "kind": "routing",
+      "boundary": "game-ui-ux/frontend-design",
+      "prompt": "Design a distinctive browser landing page for a ceramic studio, with a deliberate type scale and visual identity. There is no in-game HUD or controller navigation.",
+      "expected": {
+        "action": "select",
+        "acceptable_skill_sets": [
+          [
+            "frontend-design"
+          ]
+        ],
+        "forbidden_skills": [
+          "game-ui-ux"
+        ],
+        "rationale": "Web visual design is the target; game state/focus architecture is not needed.",
+        "clarification": null
+      },
+      "evidence_criteria": []
+    },
+    {
+      "id": "web-visual-direction-zh",
+      "pair_id": "web-visual-direction",
+      "language": "zh-CN",
+      "kind": "routing",
+      "boundary": "game-ui-ux/frontend-design",
+      "prompt": "为陶瓷工作室设计有辨识度的浏览器落地页，明确字体层级与视觉风格。没有游戏 HUD 或手柄导航。",
+      "expected": {
+        "action": "select",
+        "acceptable_skill_sets": [
+          [
+            "frontend-design"
+          ]
+        ],
+        "forbidden_skills": [
+          "game-ui-ux"
+        ],
+        "rationale": "目标是网页视觉设计，不需要游戏状态或焦点架构。",
+        "clarification": null
+      },
+      "evidence_criteria": []
+    },
+    {
+      "id": "ui-outside-scope-en",
+      "pair_id": "ui-outside-scope",
+      "language": "en",
+      "kind": "routing",
+      "boundary": "game-ui-ux/frontend-design",
+      "prompt": "Calculate 17 times 23. Do not design or build a user interface.",
+      "expected": {
+        "action": "no_skill",
+        "acceptable_skill_sets": [],
+        "forbidden_skills": [
+          "game-ui-ux",
+          "frontend-design"
+        ],
+        "rationale": "Simple arithmetic does not require either design workflow.",
+        "clarification": null
+      },
+      "evidence_criteria": []
+    },
+    {
+      "id": "ui-outside-scope-zh",
+      "pair_id": "ui-outside-scope",
+      "language": "zh-CN",
+      "kind": "routing",
+      "boundary": "game-ui-ux/frontend-design",
+      "prompt": "计算 17 乘以 23。不要设计或制作用户界面。",
+      "expected": {
+        "action": "no_skill",
+        "acceptable_skill_sets": [],
+        "forbidden_skills": [
+          "game-ui-ux",
+          "frontend-design"
+        ],
+        "rationale": "简单算术不需要这两个设计流程。",
+        "clarification": null
+      },
+      "evidence_criteria": []
+    },
+    {
+      "id": "ui-unspecified-menu-en",
+      "pair_id": "ui-unspecified-menu",
+      "language": "en",
+      "kind": "routing",
+      "boundary": "game-ui-ux/frontend-design",
+      "prompt": "Make our menu better. I have not specified whether it is a website menu or a playable game menu, or whether the issue is styling or focus behavior.",
+      "expected": {
+        "action": "clarify",
+        "acceptable_skill_sets": [],
+        "forbidden_skills": [],
+        "rationale": "The surface and requested outcome change the appropriate workflow.",
+        "clarification": "Is this a web page or in-game screen, and what observable problem should improve?"
+      },
+      "evidence_criteria": []
+    },
+    {
+      "id": "ui-unspecified-menu-zh",
+      "pair_id": "ui-unspecified-menu",
+      "language": "zh-CN",
+      "kind": "routing",
+      "boundary": "game-ui-ux/frontend-design",
+      "prompt": "把我们的菜单改好一点。我还没说明这是网站菜单还是游戏内菜单，也没说明问题在视觉样式还是焦点行为。",
+      "expected": {
+        "action": "clarify",
+        "acceptable_skill_sets": [],
+        "forbidden_skills": [],
+        "rationale": "界面载体和目标结果会改变应选的流程。",
+        "clarification": "这是网页还是游戏内界面？希望改善哪个可观察的问题？"
+      },
+      "evidence_criteria": []
+    },
+    {
+      "id": "review-request-en",
+      "pair_id": "review-request",
+      "language": "en",
+      "kind": "routing",
+      "boundary": "requesting-code-review/receiving-code-review",
+      "prompt": "I finished a save migration change and want an independent code review before merging. Prepare the requirements, validation evidence and explicit base/head revision range. No reviewer feedback has arrived yet.",
+      "expected": {
+        "action": "select",
+        "acceptable_skill_sets": [
+          [
+            "requesting-code-review"
+          ]
+        ],
+        "forbidden_skills": [
+          "receiving-code-review"
+        ],
+        "rationale": "Preparing a new review is distinct from processing an existing reviewer comment.",
+        "clarification": null
+      },
+      "evidence_criteria": []
+    },
+    {
+      "id": "review-request-zh",
+      "pair_id": "review-request",
+      "language": "zh-CN",
+      "kind": "routing",
+      "boundary": "requesting-code-review/receiving-code-review",
+      "prompt": "我完成了存档迁移改动，希望合并前进行独立代码审查。请准备需求、验证证据，以及明确的 base/head 修订范围。目前还没有收到审查反馈。",
+      "expected": {
+        "action": "select",
+        "acceptable_skill_sets": [
+          [
+            "requesting-code-review"
+          ]
+        ],
+        "forbidden_skills": [
+          "receiving-code-review"
+        ],
+        "rationale": "准备发起审查，与处理已有审查意见不同。",
+        "clarification": null
+      },
+      "evidence_criteria": []
+    },
+    {
+      "id": "review-reception-en",
+      "pair_id": "review-reception",
+      "language": "en",
+      "kind": "routing",
+      "boundary": "requesting-code-review/receiving-code-review",
+      "prompt": "A reviewer says to remove a null guard as redundant. Check the caller contracts and tests before accepting or rejecting that suggestion; do not request a new review.",
+      "expected": {
+        "action": "select",
+        "acceptable_skill_sets": [
+          [
+            "receiving-code-review"
+          ]
+        ],
+        "forbidden_skills": [
+          "requesting-code-review"
+        ],
+        "rationale": "Existing technical feedback must be verified against code reality.",
+        "clarification": null
+      },
+      "evidence_criteria": []
+    },
+    {
+      "id": "review-reception-zh",
+      "pair_id": "review-reception",
+      "language": "zh-CN",
+      "kind": "routing",
+      "boundary": "requesting-code-review/receiving-code-review",
+      "prompt": "审查者说空值保护是多余的，应删除。请先检查调用者契约和测试，再决定接受还是拒绝这个建议；不要发起新的审查。",
+      "expected": {
+        "action": "select",
+        "acceptable_skill_sets": [
+          [
+            "receiving-code-review"
+          ]
+        ],
+        "forbidden_skills": [
+          "requesting-code-review"
+        ],
+        "rationale": "需要根据代码事实核实已有技术反馈。",
+        "clarification": null
+      },
+      "evidence_criteria": []
+    },
+    {
+      "id": "review-outside-scope-en",
+      "pair_id": "review-outside-scope",
+      "language": "en",
+      "kind": "routing",
+      "boundary": "requesting-code-review/receiving-code-review",
+      "prompt": "Translate “review meeting” into Chinese. There is no code, change or feedback to evaluate.",
+      "expected": {
+        "action": "no_skill",
+        "acceptable_skill_sets": [],
+        "forbidden_skills": [
+          "requesting-code-review",
+          "receiving-code-review"
+        ],
+        "rationale": "A vocabulary request is not a code-review workflow.",
+        "clarification": null
+      },
+      "evidence_criteria": []
+    },
+    {
+      "id": "review-outside-scope-zh",
+      "pair_id": "review-outside-scope",
+      "language": "zh-CN",
+      "kind": "routing",
+      "boundary": "requesting-code-review/receiving-code-review",
+      "prompt": "把英文“review meeting”翻译成中文。没有需要评估的代码、改动或反馈。",
+      "expected": {
+        "action": "no_skill",
+        "acceptable_skill_sets": [],
+        "forbidden_skills": [
+          "requesting-code-review",
+          "receiving-code-review"
+        ],
+        "rationale": "词语翻译不是代码审查流程。",
+        "clarification": null
+      },
+      "evidence_criteria": []
+    },
+    {
+      "id": "review-unspecified-en",
+      "pair_id": "review-unspecified",
+      "language": "en",
+      "kind": "routing",
+      "boundary": "requesting-code-review/receiving-code-review",
+      "prompt": "Help me with the code review. I have not said whether I want to request one or process comments already received.",
+      "expected": {
+        "action": "clarify",
+        "acceptable_skill_sets": [],
+        "forbidden_skills": [],
+        "rationale": "The stage of review is missing.",
+        "clarification": "Are we preparing a review request, or evaluating specific comments? If comments exist, provide them and the affected code."
+      },
+      "evidence_criteria": []
+    },
+    {
+      "id": "review-unspecified-zh",
+      "pair_id": "review-unspecified",
+      "language": "zh-CN",
+      "kind": "routing",
+      "boundary": "requesting-code-review/receiving-code-review",
+      "prompt": "帮我处理代码审查。我还没说明是要发起审查，还是处理已经收到的意见。",
+      "expected": {
+        "action": "clarify",
+        "acceptable_skill_sets": [],
+        "forbidden_skills": [],
+        "rationale": "缺少审查所处阶段的信息。",
+        "clarification": "是在准备审查请求，还是评估具体意见？如果已有意见，请提供意见和相关代码。"
+      },
+      "evidence_criteria": []
+    },
+    {
+      "id": "save-migration-en",
+      "pair_id": "save-migration",
+      "language": "en",
+      "kind": "routing",
+      "boundary": "representative/save-systems",
+      "prompt": "Design a versioned save migration for existing inventory and quest progress, with backups and crash-safe writes. Do not redesign the HUD.",
+      "expected": {
+        "action": "select",
+        "acceptable_skill_sets": [
+          [
+            "save-systems"
+          ]
+        ],
+        "forbidden_skills": [
+          "game-ui-ux"
+        ],
+        "rationale": "Persistent state and migration are owned by save-systems.",
+        "clarification": null
+      },
+      "evidence_criteria": []
+    },
+    {
+      "id": "save-migration-zh",
+      "pair_id": "save-migration",
+      "language": "zh-CN",
+      "kind": "routing",
+      "boundary": "representative/save-systems",
+      "prompt": "为现有背包和任务进度设计有版本号的存档迁移，包含备份和崩溃安全写入。不要重做 HUD。",
+      "expected": {
+        "action": "select",
+        "acceptable_skill_sets": [
+          [
+            "save-systems"
+          ]
+        ],
+        "forbidden_skills": [
+          "game-ui-ux"
+        ],
+        "rationale": "持久状态和迁移属于 save-systems。",
+        "clarification": null
+      },
+      "evidence_criteria": []
+    },
+    {
+      "id": "locale-switch-en",
+      "pair_id": "locale-switch",
+      "language": "en",
+      "kind": "routing",
+      "boundary": "representative/game-localization",
+      "prompt": "Switch the game between English and Simplified Chinese without resetting quest IDs or combat state. Specify stable string IDs and CJK font fallback.",
+      "expected": {
+        "action": "select",
+        "acceptable_skill_sets": [
+          [
+            "game-localization"
+          ]
+        ],
+        "forbidden_skills": [
+          "frontend-design"
+        ],
+        "rationale": "Locale identity, fallback and state preservation are the core task.",
+        "clarification": null
+      },
+      "evidence_criteria": []
+    },
+    {
+      "id": "locale-switch-zh",
+      "pair_id": "locale-switch",
+      "language": "zh-CN",
+      "kind": "routing",
+      "boundary": "representative/game-localization",
+      "prompt": "让游戏在英语和简体中文之间切换，但不要重置任务 ID 或战斗状态。请定义稳定字符串 ID 和中日韩字体回退。",
+      "expected": {
+        "action": "select",
+        "acceptable_skill_sets": [
+          [
+            "game-localization"
+          ]
+        ],
+        "forbidden_skills": [
+          "frontend-design"
+        ],
+        "rationale": "核心任务是语言标识、回退和状态保持。",
+        "clarification": null
+      },
+      "evidence_criteria": []
+    },
+    {
+      "id": "verify-completion-en",
+      "pair_id": "verify-completion",
+      "language": "en",
+      "kind": "routing",
+      "boundary": "representative/verification-before-completion",
+      "prompt": "Before claiming this Python fix passes, run the current project test command and report its actual result, including unrun checks. I am not asking for a review request.",
+      "expected": {
+        "action": "select",
+        "acceptable_skill_sets": [
+          [
+            "verification-before-completion"
+          ]
+        ],
+        "forbidden_skills": [
+          "requesting-code-review"
+        ],
+        "rationale": "Fresh command evidence is required before a completion claim.",
+        "clarification": null
+      },
+      "evidence_criteria": []
+    },
+    {
+      "id": "verify-completion-zh",
+      "pair_id": "verify-completion",
+      "language": "zh-CN",
+      "kind": "routing",
+      "boundary": "representative/verification-before-completion",
+      "prompt": "声称这个 Python 修复通过之前，请运行当前项目测试命令并报告真实结果，包括未运行的检查。我不是在要求发起代码审查。",
+      "expected": {
+        "action": "select",
+        "acceptable_skill_sets": [
+          [
+            "verification-before-completion"
+          ]
+        ],
+        "forbidden_skills": [
+          "requesting-code-review"
+        ],
+        "rationale": "完成声明之前需要本次命令的证据。",
+        "clarification": null
+      },
+      "evidence_criteria": []
+    },
+    {
+      "id": "versioned-api-en",
+      "pair_id": "versioned-api",
+      "language": "en",
+      "kind": "routing",
+      "boundary": "representative/source-driven-development",
+      "prompt": "We need to integrate an unfamiliar Unity package API. First reconcile requested and resolved versions and find authoritative version-matched API documentation. No runtime result is available yet.",
+      "expected": {
+        "action": "select",
+        "acceptable_skill_sets": [
+          [
+            "source-driven-development"
+          ]
+        ],
+        "forbidden_skills": [
+          "unity-profiling"
+        ],
+        "rationale": "Version-sensitive integration needs source evidence, not a performance benchmark.",
+        "clarification": null
+      },
+      "evidence_criteria": []
+    },
+    {
+      "id": "versioned-api-zh",
+      "pair_id": "versioned-api",
+      "language": "zh-CN",
+      "kind": "routing",
+      "boundary": "representative/source-driven-development",
+      "prompt": "我们要接入不熟悉的 Unity 包 API。请先核实声明版本与实际解析版本，并查找与版本匹配的权威 API 文档。目前没有运行时结果。",
+      "expected": {
+        "action": "select",
+        "acceptable_skill_sets": [
+          [
+            "source-driven-development"
+          ]
+        ],
+        "forbidden_skills": [
+          "unity-profiling"
+        ],
+        "rationale": "版本敏感的集成需要来源证据，而不是性能基准。",
+        "clarification": null
+      },
+      "evidence_criteria": []
+    },
+    {
+      "id": "task-stale-results-en",
+      "pair_id": "task-stale-results",
+      "language": "en",
+      "kind": "behavior",
+      "boundary": "task/unity-debug",
+      "prompt": "Read evaluations/fixtures/stale-results.json and the complete unity-debug package. Can the recorded exit code establish that the current run passed? Identify the run mismatch and state which fresh evidence is missing. Do not launch Unity or delete files.",
+      "expected": {
+        "action": "select",
+        "acceptable_skill_sets": [
+          [
+            "unity-debug"
+          ]
+        ],
+        "forbidden_skills": [],
+        "rationale": "Reject stale results and avoid claiming a real engine run.",
+        "clarification": null
+      },
+      "evidence_criteria": [
+        {
+          "id": "current-run",
+          "fixture": "evaluations/fixtures/stale-results.json",
+          "pointer": "/invocation/run_id",
+          "equals": "run-2026-10-04-B",
+          "meaning": "Identify the requested run ID."
+        },
+        {
+          "id": "stale-run",
+          "fixture": "evaluations/fixtures/stale-results.json",
+          "pointer": "/results/run_id",
+          "equals": "run-2026-10-03-A",
+          "meaning": "Result ID differs from the requested run."
+        },
+        {
+          "id": "exit-not-proof",
+          "fixture": "evaluations/fixtures/stale-results.json",
+          "pointer": "/invocation/exit_code",
+          "equals": 0,
+          "meaning": "Exit zero alone does not prove fresh test execution."
+        },
+        {
+          "id": "missing-fresh-log",
+          "fixture": "evaluations/fixtures/stale-results.json",
+          "pointer": "/invocation/fresh_log",
+          "equals": false,
+          "meaning": "No fresh log is available; request current-run log/results rather than claim pass."
+        }
+      ]
+    },
+    {
+      "id": "task-stale-results-zh",
+      "pair_id": "task-stale-results",
+      "language": "zh-CN",
+      "kind": "behavior",
+      "boundary": "task/unity-debug",
+      "prompt": "读取 evaluations/fixtures/stale-results.json 和完整 unity-debug 包。记录的退出码能证明当前运行通过吗？指出运行标识不一致，并说明缺少什么本次运行证据。不要启动 Unity 或删除文件。",
+      "expected": {
+        "action": "select",
+        "acceptable_skill_sets": [
+          [
+            "unity-debug"
+          ]
+        ],
+        "forbidden_skills": [],
+        "rationale": "拒绝陈旧结果，不要声称执行了真实引擎运行。",
+        "clarification": null
+      },
+      "evidence_criteria": [
+        {
+          "id": "current-run",
+          "fixture": "evaluations/fixtures/stale-results.json",
+          "pointer": "/invocation/run_id",
+          "equals": "run-2026-10-04-B",
+          "meaning": "Identify the requested run ID."
+        },
+        {
+          "id": "stale-run",
+          "fixture": "evaluations/fixtures/stale-results.json",
+          "pointer": "/results/run_id",
+          "equals": "run-2026-10-03-A",
+          "meaning": "Result ID differs from the requested run."
+        },
+        {
+          "id": "exit-not-proof",
+          "fixture": "evaluations/fixtures/stale-results.json",
+          "pointer": "/invocation/exit_code",
+          "equals": 0,
+          "meaning": "Exit zero alone does not prove fresh test execution."
+        },
+        {
+          "id": "missing-fresh-log",
+          "fixture": "evaluations/fixtures/stale-results.json",
+          "pointer": "/invocation/fresh_log",
+          "equals": false,
+          "meaning": "No fresh log is available; request current-run log/results rather than claim pass."
+        }
+      ]
+    },
+    {
+      "id": "task-incompatible-windows-en",
+      "pair_id": "task-incompatible-windows",
+      "language": "en",
+      "kind": "behavior",
+      "boundary": "task/unity-profiling",
+      "prompt": "Read evaluations/fixtures/profile-windows.json and the complete unity-profiling package. Is subtracting these p95 values a valid improvement claim? Explain the instrument mismatch and request comparable windows. Do not run the upstream script or benchmark an engine.",
+      "expected": {
+        "action": "select",
+        "acceptable_skill_sets": [
+          [
+            "unity-profiling"
+          ]
+        ],
+        "forbidden_skills": [],
+        "rationale": "Different instruments invalidate an improvement claim despite matching seeds.",
+        "clarification": null
+      },
+      "evidence_criteria": [
+        {
+          "id": "before-mode",
+          "fixture": "evaluations/fixtures/profile-windows.json",
+          "pointer": "/before/instrument",
+          "equals": "editor-windowed",
+          "meaning": "Before window came from the Editor."
+        },
+        {
+          "id": "after-mode",
+          "fixture": "evaluations/fixtures/profile-windows.json",
+          "pointer": "/after/instrument",
+          "equals": "player-device",
+          "meaning": "After window came from a device player; do not compare directly."
+        },
+        {
+          "id": "same-seed-insufficient",
+          "fixture": "evaluations/fixtures/profile-windows.json",
+          "pointer": "/after/seed",
+          "equals": 42,
+          "meaning": "Matching seed is necessary but insufficient; instrument/platform/build conditions also matter."
+        }
+      ]
+    },
+    {
+      "id": "task-incompatible-windows-zh",
+      "pair_id": "task-incompatible-windows",
+      "language": "zh-CN",
+      "kind": "behavior",
+      "boundary": "task/unity-profiling",
+      "prompt": "读取 evaluations/fixtures/profile-windows.json 和完整 unity-profiling 包。相减这些 p95 值能有效证明改进吗？解释测量模式不匹配，并请求可比较的窗口。不要运行上游脚本或引擎基准。",
+      "expected": {
+        "action": "select",
+        "acceptable_skill_sets": [
+          [
+            "unity-profiling"
+          ]
+        ],
+        "forbidden_skills": [],
+        "rationale": "即使种子相同，不同测量模式也不能证明改进。",
+        "clarification": null
+      },
+      "evidence_criteria": [
+        {
+          "id": "before-mode",
+          "fixture": "evaluations/fixtures/profile-windows.json",
+          "pointer": "/before/instrument",
+          "equals": "editor-windowed",
+          "meaning": "Before window came from the Editor."
+        },
+        {
+          "id": "after-mode",
+          "fixture": "evaluations/fixtures/profile-windows.json",
+          "pointer": "/after/instrument",
+          "equals": "player-device",
+          "meaning": "After window came from a device player; do not compare directly."
+        },
+        {
+          "id": "same-seed-insufficient",
+          "fixture": "evaluations/fixtures/profile-windows.json",
+          "pointer": "/after/seed",
+          "equals": 42,
+          "meaning": "Matching seed is necessary but insufficient; instrument/platform/build conditions also matter."
+        }
+      ]
+    },
+    {
+      "id": "task-review-contract-en",
+      "pair_id": "task-review-contract",
+      "language": "en",
+      "kind": "behavior",
+      "boundary": "task/receiving-code-review",
+      "prompt": "Read evaluations/fixtures/review-contract.json and the complete receiving-code-review package. The reviewer suggests removing the guard because the count is always positive. Evaluate that suggestion against supplied caller inputs and expected outcomes. Report a reasoned decision without editing or executing project code.",
+      "expected": {
+        "action": "select",
+        "acceptable_skill_sets": [
+          [
+            "receiving-code-review"
+          ]
+        ],
+        "forbidden_skills": [],
+        "rationale": "Check the claimed caller precondition before implementing feedback.",
+        "clarification": null
+      },
+      "evidence_criteria": [
+        {
+          "id": "zero-caller",
+          "fixture": "evaluations/fixtures/review-contract.json",
+          "pointer": "/callers/1/count",
+          "equals": 0,
+          "meaning": "A supplied caller has zero count, contradicting the assumption."
+        },
+        {
+          "id": "guard-contract",
+          "fixture": "evaluations/fixtures/review-contract.json",
+          "pointer": "/callers/1/expected",
+          "equals": "ValueError",
+          "meaning": "The documented zero-count contract is an explicit validation error."
+        },
+        {
+          "id": "safe-review",
+          "fixture": "evaluations/fixtures/review-contract.json",
+          "pointer": "/execution_status",
+          "equals": "synthetic-not-executed",
+          "meaning": "This is fixture reasoning, not proof that production code or tests ran."
+        }
+      ]
+    },
+    {
+      "id": "task-review-contract-zh",
+      "pair_id": "task-review-contract",
+      "language": "zh-CN",
+      "kind": "behavior",
+      "boundary": "task/receiving-code-review",
+      "prompt": "读取 evaluations/fixtures/review-contract.json 和完整 receiving-code-review 包。审查者认为计数总是正数，建议删除保护。请根据提供的调用输入与预期结果评估建议，说明有依据的决定，不要修改或执行项目代码。",
+      "expected": {
+        "action": "select",
+        "acceptable_skill_sets": [
+          [
+            "receiving-code-review"
+          ]
+        ],
+        "forbidden_skills": [],
+        "rationale": "实现反馈前先检查审查者声称的调用前提。",
+        "clarification": null
+      },
+      "evidence_criteria": [
+        {
+          "id": "zero-caller",
+          "fixture": "evaluations/fixtures/review-contract.json",
+          "pointer": "/callers/1/count",
+          "equals": 0,
+          "meaning": "A supplied caller has zero count, contradicting the assumption."
+        },
+        {
+          "id": "guard-contract",
+          "fixture": "evaluations/fixtures/review-contract.json",
+          "pointer": "/callers/1/expected",
+          "equals": "ValueError",
+          "meaning": "The documented zero-count contract is an explicit validation error."
+        },
+        {
+          "id": "safe-review",
+          "fixture": "evaluations/fixtures/review-contract.json",
+          "pointer": "/execution_status",
+          "equals": "synthetic-not-executed",
+          "meaning": "This is fixture reasoning, not proof that production code or tests ran."
+        }
+      ]
+    }
+  ]
+}

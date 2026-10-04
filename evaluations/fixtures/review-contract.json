@@ -1,0 +1,18 @@
+{
+  "fixture_kind": "synthetic",
+  "execution_status": "synthetic-not-executed",
+  "code": "def average(total, count):\n    if count <= 0:\n        raise ValueError(\"count must be positive\")\n    return total / count\n",
+  "reviewer_claim": "Count is always positive, so remove the guard.",
+  "callers": [
+    {
+      "count": 2,
+      "total": 10,
+      "expected": 5
+    },
+    {
+      "count": 0,
+      "total": 10,
+      "expected": "ValueError"
+    }
+  ]
+}

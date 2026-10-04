@@ -134,6 +134,8 @@ Link supporting files with relative paths. State assumptions, explain failure ha
 
 Run the [offline validator and regression tests](docs/validation.md) before submitting changes. GitHub Actions runs the same checks on pushes and pull requests.
 
+The [bilingual evaluation foundations](docs/evaluations.md) add English/Chinese routing cases, synthetic evidence tasks and an honest manual recording format. CI validates fixtures and records; no model or engine quality results are claimed.
+
 1. Create `skills/<skill-name>/SKILL.md` using a descriptive, lowercase name with hyphens.
 2. Add only the references, scripts, and assets needed for that task.
 3. Document prerequisites, permissions, expected outputs, and any agent-specific behavior.
