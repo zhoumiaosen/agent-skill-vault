@@ -4,7 +4,7 @@ A storehouse for reusable AI-agent skills: focused instructions, useful referenc
 
 This repository includes thirty-seven public, licensed skills: thirty-four curated upstream skills with their source content preserved unchanged, and three clearly marked adaptations for Unity RPG/game-development workflows. No installer or runtime integrations are included.
 
-**Start with a task:** [Usage guide / 按任务使用指南](docs/usage-guide.md) — choose relevant skills, supply project context, and identify the verification evidence you need.
+**Start with a task:** [English usage guide](docs/usage-guide.md) · [中文使用指南](docs/usage-guide.zh-CN.md) — choose relevant skills, supply project context, and identify the verification evidence you need.
 
 ## Skill catalog
 
