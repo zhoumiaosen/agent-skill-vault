@@ -4,6 +4,8 @@ A storehouse for reusable AI-agent skills: focused instructions, useful referenc
 
 This repository includes thirty-seven public, licensed skills: thirty-four curated upstream skills with their source content preserved unchanged, and three clearly marked adaptations for Unity RPG/game-development workflows. No installer or runtime integrations are included.
 
+**Start with a task:** [Usage guide / 按任务使用指南](docs/usage-guide.md) — choose relevant skills, supply project context, and identify the verification evidence you need.
+
 ## Skill catalog
 
 - [frontend-design](skills/frontend-design/SKILL.md) — Design guidance for distinctive web UIs. Requires a frontend-capable agent; screenshot/browser tools help with visual review. No runtime or assets bundled. License: Apache-2.0. [Source and compatibility](skills/frontend-design/SOURCE.md)
